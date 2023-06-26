@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>矿山骨料</title>
+    <!-- 矿山骨料! -->
+    <!-- CSS 样式和结构仿照的是矿山骨料部分! -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/font-awesome.min.css" rel="stylesheet">
+    <link href="./css/prettyPhoto.css" rel="stylesheet">
+    <link href="./css/animate.min.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/responsive.css" rel="stylesheet">
+    <style type="text/css">
+
+        *{
+            padding:0;
+            margin:0;
+            font-family:'微软雅黑';
+        }         
+        html{
+
+            touch-action:none;  
+            touch-action:pan-y;
+        }
+        html,body{
+            /*禁止用户左右的滑动操作！*/
+            max-width: 100%;
+            overflow-x: hidden;
+            background:#f6fefc;
+        }
+
+
+        
+
+        /*登录标签*/
+        .dl{
+            margin-left:20px;
+            
+        }
+
+        /*登录图标和登录p标签的组合标签*/
+        .dl_li{
+            padding-top:0px;
+            margin-top:6px;
+        }
+
+
+
+        /*###导航栏组件##*/
+        .navbar navbar-default navbar-fixed-top{
+            width:auto;
+        }
+        .navbar-default{
+            /*设置导航栏的背景色：半透明*/
+            background:#296d7f;
+            
+        }
+
+        /*底部图片区域*/
+        .bottom{
+            background:#F6FDFE;
+            text-align:center;
+            align-items:center;
+
+        }
+
+        /*直接对图片进行宽度和边距的调整*/
+        .bottom_img_bg{
+            width: 1400px;margin-top:20px;margin-bottom:50px;
+        }
+
+
+        /*底部的部分*/
+        .footers{
+
+            height:auto;
+            background:#1b222e;
+            /*padding:20px 0px 20px 200px;*/
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: space-around;
+            justify-content: center;
+        }
+        /*footer容器中的与最底部文字同级标签内容*/
+        .footerinfo{
+            display:flex;
+            flex-direction:row;
+
+        }
+        /*footer部分的右边的文字组合（含扫码区）*/
+        .right1{
+            display:flex;
+            flex-direction:row;
+            margin-left:200px;
+            margin-top:50px;
+        }
+
+
+        /*关于我们四个字下面的文字部分*/
+        .font_clik{
+            color:#999999;
+            margin-top:10px;
+            margin-left:20px;
+            margin-right:50px;
+        }
+        /*关于我们四字*/
+        .font_clik_1{
+            margin-right:30px;
+            color:white;
+        }
+        /*扫描二维码的块*/
+        .ewm{
+            width:110px;
+            height:110px;
+            background:white;
+        }
+        /*关于我们、简介的尾部的文字组合部分*/
+        .click_1{
+            margin-right:20px;
+            text-align:center;
+        }
+        /*整个网页的最下面的文字部分*/
+        .font_clik_last{
+            margin-left:10px;
+        }
+
+
+
+        /*banner部分的*/
+        .content{
+            padding:0px;
+            border-bottom:1px solid #018768;
+        }
+        /*头部的banner图片的img的父容器*/
+        .content_img{
+            margin:0 auto;
+        }
+        /*头部的banner图片主体部分*/
+        .content_img_bg{
+
+            width:100%;
+        }
+
+
+
+        /*##在本部分中middle的代码已经失效!##*/
+        /*middle部分的代码*/
+        /*.middle{
+            background:#F6FDFE;
+            padding-bottom:0px;
+            margin:50px 0px 0px 0px;
+            display:flex;
+            flex-direction:row;
+            text-align:center;
+            padding-left:13.4%;
+        }
+
+
+
+
+        .middle_content{
+            display:flex;
+            flex-direction:row;
+
+        }*/
+
+        /*中间部分的左边整个文字区域*/
+        /*.left{
+            margin-right:0;
+        }
+
+        .left_fonts{
+            font-size:20px;
+            margin-bottom:20px;
+            font-weight:800;
+        }
+        .left_fonts_1{
+            color:#00b7ff;
+        }
+        .left_fonts_2{
+            line-height:41px;
+        }
+        .right{
+            height:300px;
+            width:700px;
+            padding:0px;
+            background:#f2f2f2;
+        }
+
+
+        .left_img{
+            width:700px;
+            height:300px;
+        }
+        
+        .right_fonts_1{
+            color:black;
+            font-weight:900;
+            margin-top:50px;
+            margin-bottom:20px;
+            text-align:left;
+            margin-left:90px;
+        }
+        .right_fonts_2{
+            font-size:20px;
+            color:black;
+            font-weight:900;
+            text-align:left;
+            margin-left:90px;
+            margin-bottom:20px;
+
+        }
+        .right_fonts_3{
+            color:#999999;
+            line-height:50px;
+            text-align:left;
+            margin-left:90px;
+        }*/
+
+
+
+
+
+
+
+
+        /*注：下面部分的代码已经失效，是配合着之前在wps保存文件的记录的section部分一起使用的!*/
+        /*中间的hover效果的图片部分*/
+       /* .center{
+            padding:0;
+            margin-top:60px;
+
+
+        }
+        .center_content{
+            display:flex;
+            flex-direction:column;
+        }*/
+
+        /*所有的图片组*/
+       /* .yui3_img{
+            width:670px;height:320px;
+            z-index:-1;
+            position:relative;
+        }
+        
+        .yui_3{
+            position:relative;
+            padding:0px;
+        }*/
+
+      /*  .zzhao{
+        font-size: 15px;
+        width: 670px;
+        height: 320px;
+        background: rgba(0, 0, 0, 0.5);
+        display: block;
+        text-align:center;
+        align-items:center;
+        
+        display:flex;
+        flex-direction:column;
+        
+        //注意：设置绝对定位
+        position:absolute;
+
+        top: 0;
+        left: 15%;
+        width: 70%;
+        height: 100%;
+    }
+
+
+    .yui_3:hover >.zzhao{
+        display:none;
+    }
+
+*/
+
+
+
+
+
+
+
+    /*#####这部分的代码是新引入进来的，配合着about-us一起使用。如果要更改去掉下面部分的即可！####*/
+  /*  .row-img-1{
+        width:670px;
+        height:320px;
+    }
+
+    .row-img-2{
+        width:670px;
+        height:320px;
+    }
+    .row-img-3{
+        width:670px;
+        height:320px;
+    }
+    .row-img-4{
+        width:670px;
+        height:320px;
+    }
+    .recent-work-wrap{
+        margin-bottom:20px;
+    }
+    */
+
+
+
+    /*我们实际要写的的部分*/
+    .content-sec-bottom{
+        text-align:center;
+    }
+    .content-top{
+        margin-bottom:30px;margin-top:30px;text-align:left;
+        font-size:15px;
+        width:1200px;
+        line-height:25px;
+    }
+
+    .content-middle{
+
+    }
+
+    .content-middle{
+        height:auto;width:1200px;margin-bottom:30px;
+    }
+
+    .content-bottom{
+        margin-bottom:30px;text-align:left;line-height:30px;
+        width:1200px;
+    }
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+        /*###我们这里设置响应式布局的中等大小移动端的屏占比下的CSS样式##*/
+        /*我们可以单独把这部分导出到responsive.css文件中去!*/
+        @media screen and (max-width: 1349px) {
+            /*下面的样式是为了方便在响应式网页中过渡使用！*/
+            /*新闻资讯的右边部分的两个盒子模型组合*/
+            .left_fonts_2{
+                line-height:25px;
+            }
+
+            .news_rights{
+                display:none;
+            }
+            /*footer部分的右边的文字组合（含扫码区）*/
+            .right1{
+                display:none;
+            }
+            .right{
+                display:none;
+            }
+            .middle{
+                margin:0;
+                padding:20px 20px 0px 20px;
+                text-align:center;
+                display:flex;
+            }
+            .middle_content{
+                width:100%;
+                margin:0;
+            }
+            .left_img{
+                width:100%;
+                height:auto;
+            }
+            .left{
+                margin-right:0px;
+            }
+            .middle_content{
+                width:100%;
+                margin:0;
+                display:block;
+            }
+        }
+
+
+
+
+
+        @media screen and (max-width:1607px){
+            /*关于我们、简介的尾部的文字组合部分*/
+            .click_1{
+                display:none;
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+        @media screen and (max-width: 1100px) {
+
+                /*我们实际要写的的部分*/
+                .content-top{
+                    margin-bottom:15px;margin-top:20px;text-align:left;
+                    font-size:15px;width:100%;line-height:30px;
+                }
+
+                .content-middle{
+
+                }
+
+                .content-middle{
+                    height:auto;width:98%;margin-bottom:20px;
+                    text-align:center;
+                }
+
+                .content-bottom{
+                    margin-bottom:15px;margin-top:0px;text-align:left;
+                    font-size:15px;width:100%;line-height:30px;
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /*最下面的那张背景图*/
+            .bottom_img_bg{
+                width: 90%;margin-top:20px;margin-bottom:20px;
+            }
+
+
+
+            /*遮罩层*/
+            .zzhao{
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+
+            /*新闻资讯的整体部分调整*/
+            .news{
+                text-align:center;
+                align-items:center;
+                padding:0px;
+            }
+            /*关于我们区域的文字部分*/
+            .oneaboutinfo{
+                display:none;
+            }
+            /*关于我们区域的文字部分中的第一行文字*/
+            .fonts_footer{
+                display:none;
+            }
+            /*footer部分的右边的文字组合（含扫码区）*/
+            .right1{
+                display:none;
+            }
+            /*footer部分*/
+            .footers{
+                padding:0;
+                margin:0;
+            }
+            /*footer部分的整体左边区域*/
+            .footer_left{
+                width:100%;
+                text-align:center;
+                align-items:center;
+                
+            }
+            /*footer部分的banner图片的父容器*/
+            .img_left{
+                width:50%;
+                height:auto;
+            }
+            /*footer部分的电话、邮箱的图文组合*/
+            .icon_binds{
+                padding:0;
+                display:flex;
+                flex-direction:column;
+                align-items:center;
+                text-align:center;
+            }
+            /*整个网页的最下面的文字部分*/
+            .font_clik_last{
+                align-items:center;
+                text-align:center;
+                margin-top:0;
+
+            }
+            /*底部banner图片容器*/
+            .img_left_1{
+                width:200%;
+                height:200%;
+            }
+            /*新闻资讯板块中的展会报告最下面的文字*/
+            .news_span{
+                text-align:center;
+            }
+            /*最底部的footer部分*/
+            .footers{
+                padding-top:0px;
+            }
+
+            
+            .yui3_img{
+                width:100%;
+                height:auto;
+            }
+        }
+        @media screen and (max-width:780px){
+            .content{
+                margin-top: 66px;
+            }
+            /*整个新闻资讯下半部分的右边四块区域组*/
+            .news_rights{
+                display:none;
+            }
+            /*整个新闻资讯下半部分的左边四块区域组*/
+            .news_lefts{
+                display:none;
+            }
+            /*新闻资讯下面部分的第一个子标签区域*/
+            .news_bottom_1{
+                align-items:center;
+                text-align:center;
+                width:100%;
+            }
+            /*新闻资讯下面部分的区域*/
+            .news_row{
+                text-align:center;
+                align-items:center;
+                padding:0px;
+                
+            }
+
+        }
+
+        /*为了过渡的效果，在这里我们写一个iPad的模式*/
+        @media (min-width: 780px) and (max-width: 1199px){
+            .content{
+                margin-top:196px;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 779px){
+            .content{
+                margin-top:192px;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 991px){
+            .yui3_img{
+                display:none;
+            }
+            .zzhao{
+                display:none;
+            }
+        }
+
+        
+        /**#####下面的区域整个都是main.css中拷过来的#####**/
+    /* 顶部的导航栏部分组件 */
+    .navbar>.container{
+        margin-bottom:0px;
+    }
+    .navbar>.container .navbar-brand{
+        margin-left: 0;
+        float: left;
+    }
+    .navbar-brand {
+        padding: 1px;
+        margin-top:10px;
+        margin-bottom:6px;
+    }
+    .navbar {
+        border-radius: 0;
+        margin-bottom: 0;
+        background:#3e3c3b;
+        /*设置导航栏的不透明度*/
+        opacity:0.8;
+        padding: 10px 0;
+        padding-bottom: 0;
+    }
+    .navbar-nav{
+
+
+    }
+    .navbar-nav>li{
+        margin-left: 25px;
+        padding-bottom: px;
+    }
+    .navbar-inverse .navbar-nav > li > a {
+        padding: 20px 12px 20px 12px;
+        margin: 0;
+        color: #fff;
+        font-size:17px;
+        line-height:12px;
+        display: inline-block;
+    }
+    .navbar-inverse .navbar-nav > li > a:hover{
+
+        border-bottom:1px solid #5bfefd;
+        color: #fff;
+    }
+    .navbar-inverse {
+        border: none;
+    }
+    .navbar-inverse .navbar-brand {
+        font-size: 36px;
+        line-height: 50px;
+        color: #fff;
+    }
+    .navbar-inverse .navbar-nav > .active > a,
+    .navbar-inverse .navbar-nav > .active > a:hover,
+    .navbar-inverse .navbar-nav > .active > a:focus,
+    .navbar-inverse .navbar-nav > .open > a,
+    .navbar-inverse .navbar-nav > .open > a:hover,
+    .navbar-inverse .navbar-nav > .open > a:focus {
+        border-bottom:1px solid #5bfefd;
+        color: #fff;
+        background:#464544;
+    }
+    .navbar-inverse .navbar-nav .dropdown-menu {
+        background-color: #14487f;
+        -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+        -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+        border: 0;
+        padding: 0;
+        margin-top: 0;
+        border-top: 0;
+        border-radius: 0;
+        left: 0;
+    }
+    .navbar-inverse .navbar-nav .dropdown-menu:before{
+        position: absolute;
+        top:0;
+    }
+    .navbar-inverse .navbar-nav .dropdown-menu > li > a {
+        padding: 8px 15px;
+        color: #fff;
+    }
+    .navbar-inverse .navbar-nav .dropdown-menu > li:hover > a,
+    .navbar-inverse .navbar-nav .dropdown-menu > li:focus > a,
+    .navbar-inverse .navbar-nav .dropdown-menu > li.active > a {
+        background-color:#1567ba;
+        color: #5bfefd;
+    }
+    .navbar-inverse .navbar-nav .dropdown-menu > li:last-child > a {
+        border-radius: 0 0 3px 3px;
+    }
+    .navbar-inverse .navbar-nav .dropdown-menu > li.divider {
+        background-color: transparent;
+    }
+    .navbar-inverse .navbar-collapse,
+    .navbar-inverse .navbar-form {
+        border-top: 0;
+        padding-bottom: 0;}
+
+
+    
+
+
+
+
+
+
+
+
+/*###注意：下面的部分代码已经失效，只保留本页面所需的css即可!###*/
+
+ /*   
+    #recent-works .col-xs-12.col-sm-4.col-md-3{
+    padding: 0;
+    }
+
+    #recent-works{
+        padding-bottom: 70px;
+    }
+
+    .recent-work-wrap {
+    position: relative;
+    }
+
+    .recent-work-wrap img{
+    width: 100%;
+    }
+
+    .recent-work-wrap .recent-work-inner{
+    top: 0;
+    background: transparent;
+    opacity: .8;
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 0;
+    margin-top:15%;
+    margin-left:3%;
+    align-items:center;
+    text-align:center;
+    }
+
+    .recent-work-wrap .recent-work-inner h3{
+    margin: 10px 0;
+    }
+
+    .recent-work-wrap .recent-work-inner h3 a{
+    font-size: 24px;
+    color: #fff;
+    }
+
+    .recent-work-wrap .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 0;
+    background: #494c4b;
+    color: #fff;
+    vertical-align: middle;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;  
+    padding: 30px;
+    }
+
+
+    .recent-work-wrap .overlay .preview {
+    bottom: 0;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 0;
+    background: transparent;
+    text-align: center;
+    color: #fff;
+    }
+
+    .recent-work-wrap:hover .overlay {
+    opacity: 1;
+    }
+*/
+
+
+    .about-us{
+        background:#F6FDFE;
+    }
+    </style>
+</head><!--/head-->
+<body class="cowPage">
+    <header id="header">
+        <nav class="navbar navbar-inverse navbar-default navbar-fixed-top" role="banner" style="display:block;padding:0px;margin-bottom:0px;">
+            <div class="container" style="padding-bottom:0px;">
+                <div class="navbar-header" >
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="border:0px;">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img class="bg_last" src="images/logo.png" alt="logo"></a>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav" >
+                        <li><a style="margin-top:10px;" href="index.html" id="sy">首页</a></li>
+                        <li><a href="cow.html" style="margin-top:10px;">公司概况</a></li>
+                        <li><a href="transport.html" style="margin-top:10px;">运输物流</a></li>
+                        <li><a href="mac.html" style="margin-top:10px;">机械租赁</a></li>
+                        <li class="active"><a href="mine.html" style="margin-top:10px;">矿山骨料</a></li>
+                        <li><a href="contact-us.html" style="margin-top:10px;">联系我们</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="margin-top:10px;">砼达云平台<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">鼎宸机械设备租赁</a></li>
+                                <li><a href="#">湖南鼎宸物流</a></li>
+                                <li><a href="#">湖南砼达物流</a></li>
+                                <li><a href="#">湖南鑫铅锂新能源</a></li>
+                                <li><a href="#">贵州砼达科技</a></li>
+                                
+                            </ul>
+                        </li>
+
+                        <li class="dl_li">
+                            <a href="#">
+                                <img src="./images/dl.png" alt="logo" style="margin-right:10px;margin-bottom:4px;"/>
+                                <a class="dl" style="margin-top:6px;">登录</a>
+                            </a>
+                        </li>                      
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+
+    </header><!--/header-->
+
+    
+    <!-- 主体部分的图片 -->
+    <section class="content">
+        <div class="content_img"></div>
+            <img class="content_img_bg" src="./images/ksgl2.jpg" alt="">
+    </section><!--/.content-->
+
+
+
+    <!-- center -->
+    <!-- <section class="center">
+        <div class="centerinfo">
+            <div class="ctnfont">商 品 混 泥 土， 又 称 预 拌 混 泥 土，是 吧 混 泥 土 原 材 料 各 组 按 照 一 定 比 例，在 搅 拌 站 经 计 量 ， 拌 制 后 出 售 ， 品 采 用 运 输 车 在 规  定 时 间 内 运 到 使 用 地 点 的 混 泥 土 拌  合 物。</div>
+            <div style="margin-top: 20px;">
+                <img src="./images/service_car.png" alt="" srcset="">
+            </div>
+            <div style="margin-top: 20px;" class="ctnfont">商 品 混 凝 土 的 物 流 体 系 由 于 其 行 业 特 点 ， 在 具 体 的 应 用 中 又 容 易 产 生 各 种 问 题 ， 其 突 出 的  表 现 ： 一 是 车 辆 调 度 不 能 满 足产 品配 送 要 求 。 预 拌 混 凝 土 具有 短时<br>间 初 疑 的 特 性 ， 这 就 要 求 物 流  系 统 能  够 实 现 准 时 和 准 确 配 送 ， 而 车 辆  有 效 调度  是 其 中重  要 一 环 。 在 实 践 过 程 中 经  常 会 出 现 一 些 工 地 力 过 剩 ， 有 些 工 地 却 运 力 闲 置 ， 造 成  不  必 要 的 浪 费 。 </div>
+            <div class="ctnfont">混 商 企 业 目 前 还 以 单 位 运 营 为 主 ， 未 来 会 向 集 团 管 控 方 向 发 展 。 对 此 可 在 区 域 中 心 站 进 行 物 流 设 备 （ 包 括 搅 拌 车 、 泵 车 、 车 载 泵 等 ） 的 统一 调 配 ，  单站 亦 第 三 方 物 流 为 主  ， 区域 中 心 站以 自 有 物 流 为 主 ， 具体 比 例 要 结 合 区域 市 场管 控 力 度 ， 运力 运 距 特 点 等 一 系 列 问题 而 定 ， 一 般 自 有 物 流 在 20%~ 40% 的比 较 合 理 的 。 既 能 满 足 保 供 需 求， 又 能 降 低 物 流 投 资。</div>
+        </div>
+    </section> -->
+
+
+
+    <!-- 测试 -->
+    <div class="content-sec"> 
+        <div class="container">	
+			<!-- about us slider -->
+            <div class="content-sec-bottom">
+                <div class="content-top" >骨料，即在混凝土中起骨架或填充作用的粒状松散材料。骨料作为混凝土中的主要原料，在建筑物中起骨架和支撑作用</div>
+                <img class="content-middle" src="./images/bone/bon_bg_1.png" alt="">
+                <div class="content-bottom" >粒径大于4.75 mm的骨料称为粗骨料，俗称石。常用的有碎石及卵石两种。碎石是天然岩石或岩石经机械破碎、筛分制成的，粒径大于4.75 mm的岩石颗粒。卵石是由自然风化、水流搬运和分选、堆积而成的、粒径大于4.75 mm的岩石颗粒。卵石和碎石颗粒的长度大于该颗粒所属相应粒级的平均粒径2.4倍者为针状颗粒；厚度小于平均粒径0.4倍者为片状颗粒（平均粒径指该粒级上、下限粒径的平均值）。建筑用卵石、碎石应满足国家标准GB/T 14685－2001《建筑用卵石、碎石》的技术要求。
+                    粒径4.75 mm以下的骨料称为细骨料，俗称砂。砂按产源分为天然砂、人工砂两类。天然砂是由自然风化、水流搬运和分选、堆积形成的、粒径小于4.75 mm的岩石颗粒，但不包括软质岩、风化岩石的颗粒。天然砂包括河砂、湖砂、山砂和淡化海砂。人工砂是经除土处理的机制砂、混合砂的统称。</div>
+            </div>
+			
+		</div><!--container-->
+    </div>
+
+
+
+    
+
+
+
+    <!-- 底部footer部分! -->
+    <footer class="footers">
+        <div class="footerinfo">
+            <div class="footer_left">
+                <div class="img_left">
+                    <image class="img_left_1" style="margin-top: 16px;" src="./images/banner1.png" />
+                </div>
+                <div style="display: flex; justify-content: space-between;margin-bottom:20px;margin-top:10px;" class="icon_binds">
+                    <div class="clik_icon_1" style="margin-top: 10px;">
+                        <div style="color:white;">📞 电 话: 1 5 0 8 4 9 3 5 5 5 5</div>
+                    </div>
+                    <div class="clik_icon_2" style="margin-top: 10px;">
+                        <div style="color:white;">📫 邮 箱: 1 2 3 7 1 5 8 3 0 @ qq.com</div>
+                    </div>
+                </div>
+                <div class="clik" style="margin-top: 10px;color:white;margin-bottom:15px;">
+                    地址:长 沙 市 雨 花 区 德 思 勤 广 场 1 栋 605室
+                </div>
+                <div class="clik" style="margin-top:10px;color:white;margin-bottom:6px;">
+                    友情链接 : 长沙鼎宸机械设备租赁有限公司 | 湖南鼎宸物流有限公司 | 湖南砼达物流有限公司 | 湖南鑫铅锂新能源科技有限公司 | 贵州砼达科技有限公司
+                </div>
+            </div>
+            <div class="right1">
+                <div class="click_1">
+                    <div class="font_clik_1">关于我们</div>
+                    <div class="font_clik">砼达简介</div>
+                    <div class="font_clik">商混物流</div>
+                    <div class="font_clik">机械租凭</div>
+                    <div class="font_clik">矿山骨科</div>
+                </div>
+                <div class="clik">
+                    <div  style="color: #fff;">关注我们<span
+                            style="color: gray;font-size: 12px;">(扫一扫)</span></div>
+                            <img class="ewm" src="./images/scanner.png"></img>
+                </div>
+            </div>
+        </div>
+        <div class="last">
+            <div class="last-info font"></div>
+            <div class="font_clik_last" style="color:white;">Copyight 2012-2015 砼达科技 版权所有 honghu.com 湘ICP备15019654号.</div>
+        </div>
+    </footer><!--/#middle-->
+
+
+    <!-- <script>
+        /*屏幕的大小做判断切换对应的页面*/
+        var clientWidth = document.documentElement.clientWidth;
+
+        var sy = document.getElementById('sy')
+
+        sy.onclick = function(){
+        if(clientWidth<1300){
+            window.location = './/index.html'
+        }else{
+            window.location = './/index_pc.html'
+        }
+        }
+    </script> -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>新闻资讯</title>
+    <!-- 首页点击更多案例时候跳转 -->
+    <!-- 新闻资讯! -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/font-awesome.min.css" rel="stylesheet">
+    <link href="./css/prettyPhoto.css" rel="stylesheet">
+    <link href="./css/animate.min.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/responsive.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cache.amap.com/lbs/static/main1119.css" />
+    <script type="text/javascript"
+        src="https://webapi.amap.com/maps?v=1.4.15&key=3c48738240dcff7b79852174734bc7b7"></script>
+    <script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
+    <style type="text/css">
+
+        /*下面部分的代码是引入contact-us部分，详情参考contact-us.html页面部分的骨架结构!*/
+
+        /*在这里我们直接开始写我们改动的内容*/
+        .header1_h{
+            color:black;
+            font-family:'微软雅黑';
+        }
+        /*标题文字部分*/
+        .header1{
+            margin-bottom:20px;
+        }
+        /*文字下方的那根线条*/
+        .header_bar{
+            width: 100%;
+            height: 1px;
+            background: #302d2d;
+            margin-bottom:20px;
+        }
+        /*线条下下方的文字*/
+        .header2{
+            line-height:20px;
+            margin-bottom:30px;
+        }
+        /*中间图片区域的容器主体*/
+        .content_body{
+            width:100%;
+            height:auto;
+        }
+        /*中间部分的那张图片*/
+        .content_img{
+            width:100%;
+            height:auto;
+        }
+
+       
+
+        .buttons{
+            background:#f6fefc;
+            width:100%;
+
+        }
+
+
+        .buttons_content{
+            display:flex;
+            flex-direction:row;
+            justify-content:space-around;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        *{
+            padding:0;
+            margin:0;
+            font-family:'微软雅黑';
+        }         
+        html{
+
+            touch-action:none;  
+            touch-action:pan-y;
+        }
+        html,body{
+            /*禁止用户左右的滑动操作！*/
+            max-width: 100%;
+            overflow-x: hidden;
+            background:#f6fefc;
+        }
+
+
+        
+
+        /*登录标签*/
+        .dl{
+            margin-left:20px;
+            
+        }
+
+        /*登录图标和登录p标签的组合标签*/
+        .dl_li{
+            padding-top:0px;
+            margin-top:6px;
+        }
+
+
+
+        /*###导航栏组件##*/
+        .navbar navbar-default navbar-fixed-top{
+            width:auto;
+        }
+        .navbar-default{
+            /*设置导航栏的背景色：半透明*/
+            background:#296d7f;
+            
+        }
+
+        /*底部图片区域*/
+        .bottom{
+            background:#F6FDFE;
+            text-align:center;
+            align-items:center;
+
+        }
+
+        /*直接对图片进行宽度和边距的调整*/
+        .bottom_img_bg{
+            width: 1400px;margin-top:20px;margin-bottom:50px;
+        }
+
+
+        /*底部的部分*/
+        .footers{
+            height: auto;
+            background: #1b222e;
+            /*padding:20px 0px 20px 200px;*/
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: space-around;
+            justify-content: center;
+        }
+        /*footer容器中的与最底部文字同级标签内容*/
+        .footerinfo{
+            display:flex;
+            flex-direction:row;
+
+        }
+        /*footer部分的右边的文字组合（含扫码区）*/
+        .right1{
+            display:flex;
+            flex-direction:row;
+            margin-left:200px;
+            margin-top:50px;
+        }
+
+
+        /*关于我们四个字下面的文字部分*/
+        .font_clik{
+            color:#999999;
+            margin-top:10px;
+            margin-left:20px;
+            margin-right:50px;
+        }
+        /*关于我们四字*/
+        .font_clik_1{
+            margin-right:30px;
+            color:white;
+        }
+        /*扫描二维码的块*/
+        .ewm{
+            width:110px;
+            height:110px;
+            background:white;
+        }
+        /*关于我们、简介的尾部的文字组合部分*/
+        .click_1{
+            margin-right:20px;
+            text-align:center;
+        }
+        /*整个网页的最下面的文字部分*/
+        .font_clik_last{
+            margin-left:10px;
+        }
+
+
+
+        /*banner部分的*/
+        .content{
+            padding:0px;
+            border-bottom:1px solid #018768;
+        }
+        /*头部的banner图片的img的父容器*/
+        .content_img{
+            margin:0 auto;
+        }
+        /*头部的banner图片主体部分*/
+        .content_img_bg{
+
+            width:100%;
+        }
+
+
+
+
+        /*middle部分的代码*/
+        .middle {
+            background:#f6fefc;
+            padding-bottom: 0px;
+            margin: 20px 0px 20px 0px;
+            display: flex;
+            text-align: center;
+            /* padding-left: 13.4%; */
+            justify-content: space-around;
+        }
+
+
+
+        .middle_content{
+            display:flex;
+            flex-direction:column;
+            background:white;
+            padding:20px 50px;
+
+        }
+
+        /*中间部分的左边整个文字区域*/
+        .left{
+            margin-right:0;
+        }
+
+        .left_fonts{
+            font-size:20px;
+            margin-bottom:20px;
+            font-weight:800;
+        }
+        .left_fonts_1{
+            color:#00b7ff;
+        }
+        .left_fonts_2{
+            line-height:41px;
+        }
+        .right{
+            height:300px;
+            width:700px;
+            padding:0px;
+            background:#f2f2f2;
+        }
+
+
+        .left_img{
+            width:700px;
+            height:300px;
+        }
+        
+        .right_fonts_1{
+            color:black;
+            font-weight:900;
+            margin-top:50px;
+            margin-bottom:20px;
+            text-align:left;
+            margin-left:90px;
+        }
+        .right_fonts_2{
+            font-size:20px;
+            color:black;
+            font-weight:900;
+            text-align:left;
+            margin-left:90px;
+            margin-bottom:20px;
+
+        }
+        .right_fonts_3{
+            color:#999999;
+            line-height:50px;
+            text-align:left;
+            margin-left:90px;
+        }
+
+
+        /*正常情况地图调整!*/
+        #container-a {
+            width: 73%;
+            /* margin: 150px; */
+            height: 400px;
+            margin: 0 auto;
+        }
+
+
+
+
+
+
+        /*注：下面部分的代码已经失效，是配合着之前在wps保存文件的记录的section部分一起使用的!*/
+        /*中间的hover效果的图片部分*/
+        .center{
+            padding:0;
+            margin-top:60px;
+
+
+        }
+        .center_content{
+            display:flex;
+            flex-direction:column;
+        }
+        /*所有的图片组*/
+        .yui3_img{
+            width:670px;height:320px;
+            z-index:-1;
+            position:relative;
+        }
+        
+        .yui_3{
+            position:relative;
+            padding:0px;
+        }
+
+        .zzhao{
+        font-size: 15px;
+        width: 670px;
+        height: 320px;
+        background: rgba(0, 0, 0, 0.5);
+        display: block;
+        text-align:center;
+        align-items:center;
+        
+        display:flex;
+        flex-direction:column;
+        
+        /*注意：设置绝对定位*/
+        position:absolute;
+
+        top: 0;
+        left: 15%;
+        width: 70%;
+        height: 100%;
+    }
+
+
+    .yui_3:hover >.zzhao{
+        display:none;
+    }
+
+
+
+
+
+
+
+
+
+    /*#####这部分的代码是新引入进来的，配合着about-us一起使用。如果要更改去掉下面部分的即可！####*/
+    .row-img-1{
+        width:670px;
+        height:320px;
+    }
+
+    .row-img-2{
+        width:670px;
+        height:320px;
+    }
+    .row-img-3{
+        width:670px;
+        height:320px;
+    }
+    .row-img-4{
+        width:670px;
+        height:320px;
+    }
+    .recent-work-wrap{
+        margin-bottom:20px;
+    }
+.amap-toolbar{
+    display: none;
+}
+
+        /*###我们这里设置响应式布局的中等大小移动端的屏占比下的CSS样式##*/
+        /*我们可以单独把这部分导出到responsive.css文件中去!*/
+        @media screen and (max-width: 1349px) {
+            /*下面的样式是为了方便在响应式网页中过渡使用！*/
+            /*新闻资讯的右边部分的两个盒子模型组合*/
+            .left_fonts_2{
+                line-height:25px;
+            }
+
+            .news_rights{
+                display:none;
+            }
+            /*footer部分的右边的文字组合（含扫码区）*/
+            .right1{
+                display:none;
+            }
+            .right{
+                display:none;
+            }
+            .middle{
+                margin:0;
+                padding:20px 20px 10px 20px;
+                text-align:center;
+                display:flex;
+            }
+            .middle_content{
+                width:100%;
+                margin:0;
+            }
+            .left_img{
+                width:100%;
+                height:auto;
+            }
+            .left{
+                margin-right:0px;
+            }
+            .middle_content{
+                width:100%;
+                margin:0;
+                display:block;
+            }
+        }
+        .amap-toolbar {
+            display: none;
+        }
+
+
+
+
+
+        .footer {
+            margin-top: 460px;
+        }
+        .content-window-card {
+            position: relative;
+            box-shadow: none;
+            bottom: 0;
+            left: 0;
+            width: auto;
+            padding: 0;
+        }
+
+        .content-window-card p {
+            height: 2rem;
+        }
+
+        .custom-info {
+            border: solid 1px silver;
+        }
+
+        div.info-top {
+            position: relative;
+            background: none repeat scroll 0 0 #F9F9F9;
+            border-bottom: 1px solid #CCC;
+            border-radius: 5px 5px 0 0;
+        }
+
+        div.info-top div {
+            display: inline-block;
+            color: #333333;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 31px;
+            padding: 0 10px;
+        }
+
+        div.info-top img {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            transition-duration: 0.25s;
+        }
+
+        div.info-top img:hover {
+            box-shadow: 0px 0px 5px #000;
+        }
+
+        div.info-middle {
+            font-size: 12px;
+            padding: 10px 6px;
+            line-height: 20px;
+        }
+
+        div.info-bottom {
+            height: 0px;
+            width: 100%;
+            clear: both;
+            text-align: center;
+        }
+
+        div.info-bottom img {
+            position: relative;
+            z-index: 104;
+        }
+
+        span {
+            margin-left: 5px;
+            font-size: 11px;
+        }
+
+        .info-middle img {
+            float: left;
+            margin-right: 6px;
+        }
+
+
+
+
+
+        @media screen and (max-width:1607px){
+            /*关于我们、简介的尾部的文字组合部分*/
+            .click_1{
+                display:none;
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
+        @media screen and (max-width: 1100px) {
+
+            /*最下面的那张背景图*/
+            /*.bottom_img_bg{
+                width: 90%;margin-top:20px;margin-bottom:20px;
+            }*/
+
+                    /*##适应性调整的大小!##*/
+                /*地图的大小调整!*/
+                #container-a {
+                    width: 93%;
+            /* margin: 150px; */
+            height: 300px;
+            margin: 0 auto;
+                }
+
+
+            /*遮罩层*/
+            .zzhao{
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+
+            /*新闻资讯的整体部分调整*/
+            .news{
+                text-align:center;
+                align-items:center;
+                padding:0px;
+            }
+            /*关于我们区域的文字部分*/
+            .oneaboutinfo{
+                display:none;
+            }
+            /*关于我们区域的文字部分中的第一行文字*/
+            .fonts_footer{
+                display:none;
+            }
+            /*footer部分的右边的文字组合（含扫码区）*/
+            .right1{
+                display:none;
+            }
+            /*footer部分*/
+            .footers{
+                padding:0;
+                margin:0;
+            }
+            /*footer部分的整体左边区域*/
+            .footer_left{
+                width:100%;
+                text-align:center;
+                align-items:center;
+                
+            }
+            /*footer部分的banner图片的父容器*/
+            .img_left{
+                width:50%;
+                height:auto;
+            }
+            /*footer部分的电话、邮箱的图文组合*/
+            .icon_binds{
+                padding:0;
+                display:flex;
+                flex-direction:column;
+                align-items:center;
+                text-align:center;
+            }
+            /*整个网页的最下面的文字部分*/
+            .font_clik_last{
+                align-items:center;
+                text-align:center;
+                margin-top:0;
+
+            }
+            /*底部banner图片容器*/
+            .img_left_1{
+                width:200%;
+                height:200%;
+            }
+            /*新闻资讯板块中的展会报告最下面的文字*/
+            .news_span{
+                text-align:center;
+            }
+            /*最底部的footer部分*/
+            .footers{
+                padding-top:0px;
+            }
+
+            
+            .yui3_img{
+                width:100%;
+                height:auto;
+            }
+        }
+        @media screen and (max-width:780px){
+            .content{
+                margin-top: 66px;
+            }
+            /*整个新闻资讯下半部分的右边四块区域组*/
+            .news_rights{
+                display:none;
+            }
+            /*整个新闻资讯下半部分的左边四块区域组*/
+            .news_lefts{
+                display:none;
+            }
+            /*新闻资讯下面部分的第一个子标签区域*/
+            .news_bottom_1{
+                align-items:center;
+                text-align:center;
+                width:100%;
+            }
+            /*新闻资讯下面部分的区域*/
+            .news_row{
+                text-align:center;
+                align-items:center;
+                padding:0px;
+                
+            }
+
+        }
+
+        /*为了过渡的效果，在这里我们写一个iPad的模式*/
+        @media (min-width: 780px) and (max-width: 1199px){
+            .content{
+                margin-top:196px;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 779px){
+            .content{
+                margin-top:192px;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 991px){
+            .yui3_img{
+                display:none;
+            }
+            .zzhao{
+                display:none;
+            }
+        }
+
+        
+        /**#####下面的区域整个都是main.css中拷过来的#####**/
+    /* 顶部的导航栏部分组件 */
+    .navbar>.container{
+        margin-bottom:0px;
+    }
+    .navbar>.container .navbar-brand{
+        margin-left: 0;
+        float: left;
+    }
+    .navbar-brand {
+        padding: 1px;
+        margin-top:10px;
+        margin-bottom:6px;
+    }
+    .navbar {
+        border-radius: 0;
+        margin-bottom: 0;
+        background:#3e3c3b;
+        /*设置导航栏的不透明度*/
+        opacity:0.8;
+        padding: 10px 0;
+        padding-bottom: 0;
+    }
+    .navbar-nav{
+
+
+    }
+    .navbar-nav>li{
+        margin-left: 25px;
+        padding-bottom: px;
+    }
+    .navbar-inverse .navbar-nav > li > a {
+        padding: 20px 12px 20px 12px;
+        margin: 0;
+        color: #fff;
+        font-size:17px;
+        line-height:12px;
+        display: inline-block;
+    }
+    .navbar-inverse .navbar-nav > li > a:hover{
+
+        border-bottom:1px solid #5bfefd;
+        color: #fff;
+    }
+    .navbar-inverse {
+        border: none;
+    }
+    .navbar-inverse .navbar-brand {
+        font-size: 36px;
+        line-height: 50px;
+        color: #fff;
+    }
+    .navbar-inverse .navbar-nav > .active > a,
+    .navbar-inverse .navbar-nav > .active > a:hover,
+    .navbar-inverse .navbar-nav > .active > a:focus,
+    .navbar-inverse .navbar-nav > .open > a,
+    .navbar-inverse .navbar-nav > .open > a:hover,
+    .navbar-inverse .navbar-nav > .open > a:focus {
+        border-bottom:1px solid #5bfefd;
+        color: #fff;
+        background:#464544;
+    }
+    .navbar-inverse .navbar-nav .dropdown-menu {
+        background-color: #14487f;
+        -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+        -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+        border: 0;
+        padding: 0;
+        margin-top: 0;
+        border-top: 0;
+        border-radius: 0;
+        left: 0;
+    }
+    .navbar-inverse .navbar-nav .dropdown-menu:before{
+        position: absolute;
+        top:0;
+    }
+    .navbar-inverse .navbar-nav .dropdown-menu > li > a {
+        padding: 8px 15px;
+        color: #fff;
+    }
+    .navbar-inverse .navbar-nav .dropdown-menu > li:hover > a,
+    .navbar-inverse .navbar-nav .dropdown-menu > li:focus > a,
+    .navbar-inverse .navbar-nav .dropdown-menu > li.active > a {
+        background-color:#1567ba;
+        color: #5bfefd;
+    }
+    .navbar-inverse .navbar-nav .dropdown-menu > li:last-child > a {
+        border-radius: 0 0 3px 3px;
+    }
+    .navbar-inverse .navbar-nav .dropdown-menu > li.divider {
+        background-color: transparent;
+    }
+    .navbar-inverse .navbar-collapse,
+    .navbar-inverse .navbar-form {
+        border-top: 0;
+        padding-bottom: 0;}
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    
+    #recent-works .col-xs-12.col-sm-4.col-md-3{
+    padding: 0;
+    }
+
+    #recent-works{
+        padding-bottom: 70px;
+    }
+
+    .recent-work-wrap {
+    position: relative;
+    }
+
+    .recent-work-wrap img{
+    width: 100%;
+    }
+
+    .recent-work-wrap .recent-work-inner{
+    top: 0;
+    background: transparent;
+    opacity: .8;
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 0;
+    margin-top:15%;
+    margin-left:3%;
+    align-items:center;
+    text-align:center;
+    }
+
+    .recent-work-wrap .recent-work-inner h3{
+    margin: 10px 0;
+    }
+
+    .recent-work-wrap .recent-work-inner h3 a{
+    font-size: 24px;
+    color: #fff;
+    }
+
+    .recent-work-wrap .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 0;
+    background: #494c4b;
+    color: #fff;
+    vertical-align: middle;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;  
+    padding: 30px;
+    }
+
+
+    .recent-work-wrap .overlay .preview {
+    bottom: 0;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 0;
+    background: transparent;
+    text-align: center;
+    color: #fff;
+    }
+
+    .recent-work-wrap:hover .overlay {
+    opacity: 1;
+    }
+
+
+
+    .about-us{
+        background:#F6FDFE;
+    }
+    .content-window-card {
+            position: relative;
+            box-shadow: none;
+            bottom: 0;
+            left: 0;
+            width: auto;
+            padding: 0;
+        }
+
+        .content-window-card p {
+            height: 2rem;
+        }
+
+        .custom-info {
+            border: solid 1px silver;
+        }
+
+        div.info-top {
+            position: relative;
+            background: none repeat scroll 0 0 #F9F9F9;
+            border-bottom: 1px solid #CCC;
+            border-radius: 5px 5px 0 0;
+        }
+
+        div.info-top div {
+            display: inline-block;
+            color: #333333;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 31px;
+            padding: 0 10px;
+        }
+
+        div.info-top img {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            transition-duration: 0.25s;
+        }
+
+        div.info-top img:hover {
+            box-shadow: 0px 0px 5px #000;
+        }
+
+        div.info-middle {
+            font-size: 12px;
+            padding: 10px 6px;
+            line-height: 20px;
+        }
+
+        div.info-bottom {
+            height: 0px;
+            width: 100%;
+            clear: both;
+            text-align: center;
+        }
+
+        div.info-bottom img {
+            position: relative;
+            z-index: 104;
+        }
+
+        span {
+            margin-left: 5px;
+            font-size: 11px;
+        }
+
+        .info-middle img {
+            float: left;
+            margin-right: 6px;
+        }
+    </style>
+</head><!--/head-->
+<body class="cowPage">
+    <header id="header">
+        <nav class="navbar navbar-inverse navbar-default navbar-fixed-top" role="banner" style="display:block;padding:0px;margin-bottom:0px;">
+            <div class="container" style="padding-bottom:0px;">
+                <div class="navbar-header" >
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="border:0px;">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img class="bg_last" src="images/logo.png" alt="logo"></a>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav" >
+                        <li><a style="margin-top:10px;" href="index.html" id="sy">首页</a></li>
+                        <li><a href="cow.html" style="margin-top:10px;">公司概况</a></li>
+                        <li><a href="transport.html" style="margin-top:10px;">运输物流</a></li>
+                        <li><a href="mac.html" style="margin-top:10px;">机械租赁</a></li>
+                        <li><a href="mine.html" style="margin-top:10px;">矿山骨料</a></li>
+                        <li class="active"><a href="#" style="margin-top:10px;">联系我们</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="margin-top:10px;">砼达云平台<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">鼎宸机械设备租赁</a></li>
+                                <li><a href="#">湖南鼎宸物流</a></li>
+                                <li><a href="#">湖南砼达物流</a></li>
+                                <li><a href="#">湖南鑫铅锂新能源</a></li>
+                                <li><a href="#">贵州砼达科技</a></li>
+                                
+                            </ul>
+                        </li>
+
+                        <li class="dl_li">
+                            <a href="#">
+                                <img src="./images/dl.png" alt="logo" style="margin-right:10px;margin-bottom:4px;"/>
+                                <a class="dl" style="margin-top:6px;">登录</a>
+                            </a>
+                        </li>                      
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+
+    </header><!--/header-->
+
+    
+    <!-- 主体部分的图片 -->
+    <section class="content">
+        <div class="content_img"></div>
+            <img class="content_img_bg" src="./images/news/news_detail.png" alt="">
+    </section><!--/.content-->
+
+
+
+    <!-- 主体部分中间的 -->
+    <section class="middle">
+        <div class="middle_content">
+            <div class="content_header">
+                <div class="header1">
+                    <h3 class="header1_h">展会预告| 与您相约2021年长沙国际工程机械展览会</h3>
+                    <p class="header1_s">发布：砼达科技     日期：2021-04-15</p>
+                </div>
+                <div class="header_bar">
+                </div>
+                <p class="header2">2021长沙国际工程机械展览会将于5月19日在长沙国际会展中心拉开帷幕。这将是今年全球唯一举办的30万平方米超大型工程机械行业展会。</p>
+            </div>
+            <div class="content_body">
+                <img class="content_img" src="./images/partners/car2.png" alt="" />
+            </div>
+        </div>
+    </section>
+
+    <!-- 按钮部分的代码 -->
+    <section class="buttons">
+        <div class="buttons_content">
+
+            <button type="button" class="btn btn-default last" onclick=javascrtpt:jump()>< 上一步</button>
+
+            <div class="button_right">
+                <button type="button" class="btn btn-default last" onclick=javascrtpt:jump()>下一条 ></button>
+                <button type="button" class="btn btn-default last" onclick=javascrtpt:jump()>返回</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 按钮点击跳转的事件! -->
+    <script>
+        function jump(){
+            window.location.href="case.html";
+            }
+    </script>
+
+    
+
+    <!-- bottom部分 -->
+
+    <section class="bottom">
+        <div class="bottom_btn"></div>
+    </section><!--/#bottom-->
+
+
+    <!-- 底部footer部分! -->
+    <footer class="footers">
+        <div class="footerinfo">
+            <div class="footer_left">
+                <div class="img_left">
+                    <image class="img_left_1" style="margin-top: 16px;" src="./images/banner1.png" />
+                </div>
+                <div style="display: flex; justify-content: space-between;margin-bottom:20px;margin-top:10px;" class="icon_binds">
+                    <div class="clik_icon_1" style="margin-top: 10px;">
+                        <div style="color:white;">📞 电 话: 1 5 0 8 4 9 3 5 5 5 5</div>
+                    </div>
+                    <div class="clik_icon_2" style="margin-top: 10px;">
+                        <div style="color:white;">📫 邮 箱: 1 2 3 7 1 5 8 3 0 @ qq.com</div>
+                    </div>
+                </div>
+                <div class="clik" style="margin-top: 10px;color:white;margin-bottom:15px;">
+                    地址:长 沙 市 雨 花 区 德 思 勤 广 场 1 栋 605室
+                </div>
+                <div class="clik" style="margin-top:10px;color:white;margin-bottom:6px;">
+                    友情链接 : 长沙鼎宸机械设备租赁有限公司 | 湖南鼎宸物流有限公司 | 湖南砼达物流有限公司 | 湖南鑫铅锂新能源科技有限公司 | 贵州砼达科技有限公司
+                </div>
+            </div>
+            <div class="right1">
+                <div class="click_1">
+                    <div class="font_clik_1">关于我们</div>
+                    <div class="font_clik">砼达简介</div>
+                    <div class="font_clik">商混物流</div>
+                    <div class="font_clik">机械租凭</div>
+                    <div class="font_clik">矿山骨科</div>
+                </div>
+                <div class="clik">
+                    <div  style="color: #fff;">关注我们<span
+                            style="color: gray;font-size: 12px;">(扫一扫)</span></div>
+                            <img class="ewm" src="./images/scanner.png"></img>
+                </div>
+            </div>
+        </div>
+        <div class="last">
+            <div class="last-info font"></div>
+            <div class="font_clik_last" style="color:white;">Copyight 2012-2015 砼达科技 版权所有 honghu.com 湘ICP备15019654号.</div>
+        </div>
+    </footer><!--/#middle-->
+
+    
+    <!-- <script>
+        /*屏幕的大小做判断切换对应的页面*/
+        var clientWidth = document.documentElement.clientWidth;
+
+        var sy = document.getElementById('sy')
+
+        sy.onclick = function(){
+        if(clientWidth<1300){
+            window.location = './/index.html'
+        }else{
+            window.location = './/index_pc.html'
+        }
+        }
+</script> -->
+
+
+    
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+</body>
+</html>

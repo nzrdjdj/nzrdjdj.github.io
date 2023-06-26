@@ -1,0 +1,1459 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>首页</title>
+    <!-- 首页! -->
+	<!-- core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/font-awesome.min.css" rel="stylesheet">
+    <link href="./css/animate.min.css" rel="stylesheet">
+    <link href="./css/prettyPhoto.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/responsive.css" rel="stylesheet">
+    
+
+    <!-- 新引入的css和部分! -->
+    <link rel="stylesheet" href="./css/iPicture.css">
+    <script src="./js/jquery-1.8.3.min.js"></script>
+    <script src="./js/jquery.ipicture.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+
+    <style type="text/css">
+        *{
+            padding:0;
+            margin:0;
+            font-family:'微软雅黑';
+        }         
+
+
+                    /*引入地图热点组件*/
+                    .iPicture{
+                        display:flex;
+                        flex-direction:row;
+                        width:100%;
+                        padding:0;
+                        margin-top:30px;  
+                        position:relative;
+                        
+                    }
+
+
+
+
+                
+        /*引入的行内样式下面*/
+        * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        a, img {
+            border: 0;
+        }
+
+        h2 {
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        body {
+            font: 12px/180% Arial, Helvetica, sans-serif, "新宋体";
+            color: #333;
+        }
+        .moren{
+            position: relative;
+            display: none; 
+        }
+        .moren2{
+            position: relative;
+            display: none; 
+        }
+        .moren3{
+            position: relative;
+            display: none; 
+        }
+        .moren4{
+            position: relative;
+            display: none; 
+        }
+        .moren5{
+            position: relative;
+
+        }
+        .bj{
+            position: absolute;
+            top: -428px;
+            right: 382px;
+        }
+        .bjinfo{
+            position: absolute;
+            top: -391px;
+            right: 639px;
+        }
+        .img1{
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            z-index: 99999;
+
+        }
+        .active{
+            box-shadow: rgba(red, rgb(253, 70, 37), rgb(255, 44, 44), .5);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*#################################################
+        ############这是我们的PC端的show1部分!#############
+        ###################################################*/
+
+        /*#################################################
+        ############这是我们的PC端的show2部分!#############
+        ###################################################*/
+
+        /*#################################################
+        ############这是我们的PC端的show3部分!#############
+        ###################################################*/
+
+        /*#################################################
+        ############这是我们的PC端的show4部分!#############
+        ###################################################*/
+
+        /*#################################################
+        ############这是我们的PC端的show5部分!#############
+        ###################################################*/
+
+
+/*###我们这里设置响应式布局的中等大小移动端的屏占比下的CSS样式##*/
+
+
+/*我们设置屏幕最大宽度为1100px*/
+@media (min-width: 780px) and (max-width: 1199px){
+
+
+            
+        /*footer部分的右边的文字组合（含扫码区）*/
+        #right1{
+            display:none;
+        }
+
+
+
+
+
+
+
+
+            /*调整一下移动端的手机适配的图片大小*/
+            #swo{
+                width:35%;
+                margin-right:100px;
+            }
+            
+            .info1{display:none;}
+      
+}
+
+
+
+@media screen and (max-width: 1100px) {
+
+
+
+
+    /*引入地图热点组件*/
+    .iPicture{
+        display:flex;
+        flex-direction:row;
+        width:100%;
+        padding:0;
+        margin-top:30px;  
+
+    }
+
+    .info1{display:none;}
+
+    /*设值百分比宽度和相对定位*/
+    .ip_slide{
+        width:100%;
+        position:relative;
+
+    }
+
+    /*调整一下移动端的手机适配的图片大小*/
+    #swo{
+        width:35%;
+        margin-right:100px;
+    }
+
+    
+
+
+
+
+/*调整一下移动端的手机适配的图片大小*/
+#swo{
+    width:35%;
+    margin-right:100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*新闻资讯的整体部分调整*/
+    .news{
+        text-align:center;
+        align-items:center;
+        padding:0px;
+    }
+    /*关于我们区域的文字部分*/
+    .oneaboutinfo{
+        display:none;
+    }
+    /*关于我们区域的文字部分中的第一行文字*/
+    .fonts_footer{
+        display:none;
+    }
+    /*footer部分的右边的文字组合（含扫码区）*/
+    .right1{
+        display:none;
+    }
+    /*footer部分*/
+    .footers{
+        padding:0;
+        margin:0;
+    }
+    /*footer部分的整体左边区域*/
+    .footer_left{
+        width:100%;
+        text-align:center;
+        align-items:center;
+        
+    }
+    /*footer部分的banner图片的父容器*/
+    .img_left{
+        width:50%;
+        height:auto;
+    }
+    /*footer部分的电话、邮箱的图文组合*/
+    .icon_binds{
+        padding:0;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+    /*整个网页的最下面的文字部分*/
+    .font_clik_last{
+        align-items:center;
+        text-align:center;
+        margin-top:0;
+
+    }
+    /*底部banner图片容器*/
+    .img_left_1{
+        width:200%;
+        height:200%;
+    }
+    /*新闻资讯板块中的展会报告最下面的文字*/
+    .news_span{
+        text-align:center;
+    }
+    /*最底部的footer部分*/
+    .footers{
+        padding-top:0px;
+    }
+}
+
+
+@media screen and (max-width:780px){
+
+
+
+
+
+
+
+
+
+    /*整个新闻资讯下半部分的右边四块区域组*/
+    .news_rights{
+        display:none;
+    }
+    /*整个新闻资讯下半部分的左边四块区域组*/
+    .news_lefts{
+        display:none;
+    }
+    /*新闻资讯下面部分的第一个子标签区域*/
+    .news_bottom_1{
+        align-items:center;
+        text-align:center;
+        width:100%;
+    }
+    /*新闻资讯下面部分的区域*/
+    .news_row{
+        text-align:center;
+        align-items:center;
+        padding:0px;
+        
+    }
+
+}
+
+
+@media screen and (max-width:1200px){
+   .bj{display:none;}
+   .bjinfo{display:none;}
+   #right1{display:none;}
+}
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        html{
+
+            touch-action:none;
+            touch-action:pan-y;
+        }
+        html,body{
+            /*禁止用户左右的滑动操作！*/
+            max-width: 100%;
+            overflow-x: hidden;
+            background:#f6fdfe;
+        }
+
+
+
+
+        /*登录标签*/
+        .dl{
+            margin-left:20px;
+            
+        }
+
+        /*登录图标和登录p标签的组合标签*/
+        .dl_li{
+            padding-top:0px;
+            margin-top:6px;
+        }
+        
+        /*轮播图居中的样式设置*/
+        .carousel-inner{
+            padding-top:0px;margin-bottom:0px;
+        }
+        .carousel-inner img{margin:0 auto;}
+        /*###导航栏组件##*/
+        .navbar navbar-default navbar-fixed-top{
+            width:auto;
+        }
+        .navbar-default{
+            /*设置导航栏的背景色：半透明*/
+            background:rgba(105, 208, 248, 0.125);
+            
+        }
+
+
+        /*轮播图顶部的边距设置*/
+        .carousel-inner{
+        margin-top:50px;
+        }
+
+        /*轮播图居中的样式设置*/
+        .carousel-inner img{margin:0 auto;}
+
+
+
+
+
+        /*运营案例的填充大小设置*/
+        .anli{
+            padding-bottom:16px;
+        }
+
+        /*运营案例的中间部分主体*/
+        .mainCenter{
+            padding-left:0;
+            padding-right:0;
+            padding-bottom:20px;
+
+        }
+
+        .img_1{
+            margin-left:90px;
+        }
+
+        .img_3{
+            margin-right:90px;
+        }
+        
+        /*运营案例中的图片部分*/
+        .yui_img_1{
+            width:389px;height:220px;
+        }
+        .yui_img_2{
+            width:389px;height:220px;
+        }
+        .yui_img_3{
+            width:389px;height:220px;
+        }
+
+        /*新闻资讯的左边的图片和文字组*/
+        .news_bottom_1{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            width:40%;
+        
+
+        }
+        /*新闻资讯的右下部分*/
+        .news_bottom_2{
+            display:flex;
+            flex-direction:row;
+        }
+        /*新闻资讯的左边图片部分*/
+        .news_img{
+            width: 100%;
+            height: auto;
+        }
+        /*新闻资讯的左边文字部分*/
+        .news_span{
+            color: gray;font-size: 10px;
+            text-align:left;
+            align-items:center;
+            display:block;
+            margin-bottom:10px;
+        }
+
+        /*运营案例 （文字）*/
+        .firstmain-info_2{
+            color:white;
+            margin-top:20px;
+        }
+
+        /*运营案例的中间部分主体*/
+        .mainCenter{
+            display:flex;
+            flex-direction:column;
+            width:100%;
+        }
+        /*运营案例中的图片组*/
+        .pgimg{
+            display:flex;
+            flex-direction:row;
+            padding:0;
+            width:100%;
+        }
+        /*新闻资讯的主体部分*/
+        .ctenrnew{
+            
+            display:flex;
+            flex-direction:column;
+            text-align:center;
+            align-items:center;
+        }
+
+        /*新闻资讯的上部分的文字组*/
+        .xinwen{
+            width:100%;
+            text-align:center;
+            align-items:center;
+        }
+        /*新闻资讯的左下部分整体*/
+        .news_row {
+            display: flex;
+            padding: 10px;
+            align-content: space-around;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }        
+
+
+        /*新闻案例部分*/
+.news{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    align-items:center;
+    padding:10px;
+    background:#ecf1f3;
+}
+/*新闻资讯的左边的图片和文字组*/
+.news_bottom_1{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:50%;
+
+}
+/*新闻资讯的右下部分*/
+.news_bottom_2{
+    display:flex;
+    flex-direction:row;
+}
+/*新闻资讯的左边图片部分*/
+.news_img{
+    width: auto;
+    height: 245px;
+}
+/*新闻资讯的左边文字部分*/
+.news_span{
+   /* color: gray;font-size: 2px;*/
+}
+
+/*关于我们*/
+.about{
+    align-items:center;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    background:#0e0f1b;
+    padding:10px;
+}
+/*关于我们部分的文字*/
+.ab_xinwen{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+/*关于我们的整个下半部分!*/
+.aboutinfo{
+    display:flex;
+    flex-direction:row;
+    margin-bottom:50px;
+}
+/*关于我们的左下部分的文字!*/
+.oneaboutinfo{
+    margin-right:60px;
+    margin-top:20px;
+    text-align:left;
+    color:white;
+    line-height:30px;
+}
+
+
+
+/*底部的部分*/
+.footers{
+    height:auto;
+    background:#1b222e;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+/*footer容器中的与最底部文字同级标签内容*/
+.footerinfo{
+    display:flex;
+    flex-direction:row;
+
+}
+/*footer部分的右边的文字组合（含扫码区）*/
+.right1{
+    display:flex;
+    flex-direction:row;
+    margin-left:200px;
+    margin-top:50px;
+}
+
+
+
+
+
+/*关于我们四个字下面的文字部分*/
+.font_clik{
+    color:#999999;
+    margin-top:10px;
+    margin-left:20px;
+    margin-right:50px;
+}
+/*关于我们四字*/
+.font_clik_1{
+    margin-right:30px;
+    color:white;
+}
+/*扫描二维码的块*/
+.ewm{
+    width:110px;
+    height:110px;
+    background:white;
+}
+/*关于我们、简介的尾部的文字组合部分*/
+.click_1{
+    margin-right:20px;
+    text-align:center;
+}
+/*整个网页的最下面的文字部分*/
+.font_clik_last{
+    margin-left:10px;
+}
+
+.firstmain{
+    position:relative;
+}
+
+
+        
+
+
+
+    /**#####下面的区域整个都是main.css中拷过来的#####**/
+        /* 顶部的导航栏部分组件 */
+    .navbar>.container{
+        margin-bottom:0px;
+    }
+    .navbar>.container .navbar-brand{
+        margin-left: 0;
+        float: left;
+    }
+    .navbar-brand {
+        padding: 1px;
+        margin-top:10px;
+        margin-bottom:6px;
+    }
+    .navbar {
+        border-radius: 0;
+        margin-bottom: 0;
+        background:#296D7F;
+        padding: 10px 0;
+        padding-bottom: 0;
+    }
+    .navbar-nav{
+
+
+    }
+    .navbar-nav>li{
+        margin-left: 25px;
+        padding-bottom: px;
+    }
+    .navbar-inverse .navbar-nav > li > a {
+        padding: 20px 12px 20px 12px;
+        margin: 0;
+        color: #fff;
+        font-size:17px;
+        line-height:12px;
+        display: inline-block;
+    }
+    .navbar-inverse .navbar-nav > li > a:hover{
+
+        border-bottom:1px solid #5bfefd;
+        color: #fff;
+    }
+    .navbar-inverse {
+        border: none;
+    }
+    .navbar-inverse .navbar-brand {
+        font-size: 36px;
+        line-height: 50px;
+        color: #fff;
+    }
+    .navbar-inverse .navbar-nav > .active > a,
+    .navbar-inverse .navbar-nav > .active > a:hover,
+    .navbar-inverse .navbar-nav > .active > a:focus,
+    .navbar-inverse .navbar-nav > .open > a,
+    .navbar-inverse .navbar-nav > .open > a:hover,
+    .navbar-inverse .navbar-nav > .open > a:focus {
+        border-bottom:1px solid #5bfefd;
+        color: #fff;
+        background:#296D7F;
+    }
+    .navbar-inverse .navbar-nav .dropdown-menu {
+        background-color: #14487f;
+        -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+        -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
+        border: 0;
+        padding: 0;
+        margin-top: 0;
+        border-top: 0;
+        border-radius: 0;
+        left: 0;
+    }
+    .navbar-inverse .navbar-nav .dropdown-menu:before{
+        position: absolute;
+        top:0;
+    }
+    .navbar-inverse .navbar-nav .dropdown-menu > li > a {
+        padding: 8px 15px;
+        color: #fff;
+    }
+    .navbar-inverse .navbar-nav .dropdown-menu > li:hover > a,
+    .navbar-inverse .navbar-nav .dropdown-menu > li:focus > a,
+    .navbar-inverse .navbar-nav .dropdown-menu > li.active > a {
+        background-color:#1567ba;
+        color: #5bfefd;
+    }
+    .navbar-inverse .navbar-nav .dropdown-menu > li:last-child > a {
+        border-radius: 0 0 3px 3px;
+    }
+    .navbar-inverse .navbar-nav .dropdown-menu > li.divider {
+        background-color: transparent;
+    }
+    .navbar-inverse .navbar-collapse,
+    .navbar-inverse .navbar-form {
+        border-top: 0;
+        padding-bottom: 0;
+    }
+
+
+
+    /* 业务布局部分的样式代码 */
+    .layout{
+        background:#ffffff;
+        text-align:center;
+        align-items:center;
+        padding-bottom:10px;
+        background-color: #F6FDFE;
+
+    }
+
+
+    /* 运营案例部分的样式代码 */
+    .an_li{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+        align-items:center;
+        padding:10px;
+        background:#19263c;
+    }
+    .anli{
+        display:flex;flex-direction:column;
+        text-align:center;
+        align-items:center;
+    }
+    .anli_header{
+        margin-bottom:20px;
+    }
+
+    /* 运营案例的中间部分 */
+    .row{
+        padding-top:20px;
+
+    }
+    /* 运营案例中间部分的图文组 */
+    .yui_1{
+        display:flex;
+        flex-direction:column;
+
+
+    }
+
+    .yui_2{
+        display:flex;
+        flex-direction:column;
+
+
+    }
+    .yui_3{
+        display:flex;
+        flex-direction:column;
+
+    }
+    .zzhao_font{
+        color:#4accff;
+
+        border:2px solid #4accff;
+        border-radius:2px;
+        width:100px;
+        margin:100px auto;
+        
+    }
+        
+        /*遮罩层*/
+
+        .zzhao{
+        font-size: 15px;
+        width: 390px;
+        height: 220px;
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        display: none;
+        text-align:center;
+        align-items:center;
+    }
+    .yui_1:hover >.zzhao {
+        display: block;
+    }
+    .yui_2:hover >.zzhao{
+        display:block;
+    }
+    .yui_3:hover >.zzhao{
+        display:block;
+    }
+
+
+    .layout_1{height:800px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+    <link rel="stylesheet" href="css/jquery.hotspot.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.49511.js"></script>
+    <script type="text/javascript" src="js/jquery.hotspot.min.js"></script>
+    
+
+
+    <script type="text/javascript">
+        $(document).ready(function ($) {
+            //demo01
+            $('#container1').hotSpot();
+            //demo02
+            var _pop2 = $('#container2').hotSpot({
+                slideshow: false,
+                triggerBy: 'click',
+                autoHide: false
+            });
+            $('#image2').on('click', function (event) {
+                _pop2.hideCurrentPop();
+            });
+        });
+    </script>
+
+</head><!--/head-->
+
+<body class="homepage">
+
+
+    <header id="header">
+        <nav class="navbar navbar-inverse navbar-default navbar-fixed-top" role="banner" style="display:block;padding:0px;margin-bottom:0px;">
+            <div class="container" style="padding-bottom:0px;">
+                <div class="navbar-header" >
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="border:0px;">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img class="bg_last" src="images/logo.png" alt="logo"></a>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav" >
+                        <li class="active">
+                            <a id="changes" style="margin-top:10px;" href="index.html">
+                                首页</a></li>
+                        <li><a href="cow.html" style="margin-top:10px;">公司概况</a></li>
+                        <li><a href="transport.html" style="margin-top:10px;">运输物流</a></li>
+                        <li><a href="mac.html" style="margin-top:10px;">机械租赁</a></li>
+                        <li><a href="mine.html" style="margin-top:10px;">矿山骨料</a></li>
+                        <li><a href="contact-us.html" style="margin-top:10px;">联系我们</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="margin-top:10px;">砼达云平台<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">鼎宸机械设备租赁</a></li>
+                                <li><a href="#">湖南鼎宸物流</a></li>
+                                <li><a href="#">湖南砼达物流</a></li>
+                                <li><a href="#">湖南鑫铅锂新能源</a></li>
+                                <li><a href="#">贵州砼达科技</a></li>
+                                
+                            </ul>
+                        </li>
+
+                        <li class="dl_li">
+                            <a href="#">
+                                <img src="./images/dl.png" alt="logo" style="margin-right:10px;margin-bottom:4px;"/>
+                                <a class="dl" style="margin-top:6px;">登录</a>
+                            </a>
+                        </li>                      
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+
+    </header><!--/header-->
+
+    <!-- 轮播图修改之后的组件 -->
+    <section class="slide">
+        <div id="myCarousel" class="carousel slide">
+            <ol class="carousel-indicators">
+                <!-- data-slide-to是圆点必须有的属性 -->
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" style="">
+                <div class="item active">
+                    <img src="./images/slider/bg1.png" alt="第一张">
+                </div>
+                <div class="item">
+                    <img src="./images/slider/bg1.png" alt="第二张">
+                </div>
+                <div class="item">
+                    <img src="./images/slider/bg1.png" alt="第三张">
+                </div>
+            </div>
+            <!-- 这个是左右方向键 -->
+            <!-- 设置左右播放按钮 -->
+            <a href="#myCarousel" data-slide="prev" class="carousel-control left">
+                <!-- 这两个文字图标bootstrap会自动识别，自动居中，很方便 -->
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+    
+            <a href="#myCarousel" data-slide="next" class="carousel-control right">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            <!-- <a href=""></a> -->
+        </div><!--/#main-slider-->
+    </section>
+
+    <!-- 业务布局部分的组件 -->
+    <section class="layout" style="background:white;">
+        <!-- 业务 -->
+        <div class="firstmain">
+            <div class="firstmain-info_1" style="color:black;font-size:30px;margin-top:20px;">业务布局</div>
+            <div class="first-border">
+                <image class="" src="./images/partners/bar.png" style="margin-top:20px;margin-bottom:10px;"/>
+            </div>
+            <div class="colorstyle" >B U S I N E S S L A Y O U T</div>
+            <!--  -->
+            <div class="container_s" id="container1">
+                <div class="popover bottom pop4"  data-easeout="cardOutBottom" id="pop4">
+                </div>
+            </div>
+        
+            <div class="container_s" id="container2">
+                <div class="popover top" data-easein="cardInTop" data-easeout="cardOutTop" id="pop5">
+                    <div class="arrow"></div>
+                    <div class="popover-inner">
+                        <h3 class="popover-title">资产公司:湖南鼎城</h3>
+                        <div class="popover-content">
+                            <p>湖南6键等</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="popover right" data-easein="cardInRight" data-easeout="cardOutRight" id="pop6">
+                    <div class="arrow"></div>
+                    <div class="popover-inner">
+                        <h3 class="popover-title">资产公司:湖南鼎城</h3>
+                        <div class="popover-content">
+                            <p>湖南6键等</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="popover left" data-easein="cardInLeft" data-easeout="cardOutLeft" id="pop7">
+        
+                    <div class="arrow"></div>
+        
+                    <div class="popover-inner">
+                        <h3 class="popover-title">资产公司:湖南鼎城</h3>
+                        <div class="popover-content">
+                            <p>湖南6键等</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="popover bottom" data-easein="cardInBottom" data-easeout="cardOutBottom" id="pop8">
+                    <div class="arrow"></div>
+                    <div class="popover-inner">
+                        <h3 class="popover-title">资产公司:湖南鼎城</h3>
+                        <div class="popover-content">
+                            <p>湖南6键等</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/rauai.png"  class="info-icon info-icon1 active" data-target="pop5"  id="img1" />
+                <img src="images/rauai.png" alt="info" class="info-icon info-icon2" data-target="pop6"  id="img2" />
+                <img src="images/rauai.png" alt="info" class="info-icon info-icon3" data-target="pop7"  id="img3" />
+                <img src="images/rauai.png" alt="info" class="info-icon info-icon4" data-target="pop8"  id="img4" />
+                <img src="images/map1.png" alt="" class="largeimage" id="image2" />
+            </div>
+            <div class="moren" style="display: block;" id="moren">
+                <div class="bj">
+                    <img src="./images/a.png" alt="">
+                </div>
+                <div class="bjinfo">
+                    <div>资产公司:湖南鼎城物流</div>
+                    <div style="margin-top: 65px;">承接业务:湖南六建等</div>
+                    <div style="margin-top: 195px;">车辆93台</div>
+                </div>
+            </div>
+            
+            <div class="moren2" id="moren2">
+                <div class="bj">
+                    <img src="./images/a.png" alt="">
+                </div>
+                <div class="bjinfo">
+                    <div>资产公司:湖南鼎城物流</div>
+                    <div style="margin-top: 65px;">承接业务:湖南一建等</div>
+                    <div style="margin-top: 195px;">车辆100台</div>
+                </div>
+            </div>
+            <div class="moren3" id="moren3">
+                <div class="bj">
+                    <img src="./images/a.png" alt="">
+                </div>
+                <div class="bjinfo">
+                    <div>资产公司:湖南鼎城物流</div>
+                    <div style="margin-top: 65px;">承接业务:湖南七建等</div>
+                    <div style="margin-top: 195px;">车辆950台</div>
+                </div>
+            </div>
+            <div class="moren4" id="moren4">
+                <div class="bj">
+                    <img src="./images/a.png" alt="">
+                </div>
+                <div class="bjinfo">
+                    <div>资产公司:湖南鼎城物流</div>
+                    <div style="margin-top: 65px;">承接业务:湖南八建等</div>
+                    <div style="margin-top: 195px;">车辆90台</div>
+                </div>
+            </div>
+            <div class="moren5" id="moren5">
+                <div class="bj">
+                    <img src="./images/a.png" alt="">
+                </div>
+                <div class="bjinfo">
+                    <div>资产公司:湖南鼎城物流</div>
+                    <div style="margin-top: 65px;">承接业务:湖南XXX建等</div>
+                    <div style="margin-top: 195px;">车辆90台</div>
+                </div>
+            </div>
+        
+        
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 运营案例的改编 -->
+    <section class="an_li" >
+        <div class="anli">
+            <div class="anli_header">
+                <div class="firstmain-info_1" style="color:white;font-size:30px;margin-top:20px;">运营案例</div>
+                <div class="first-border">
+                    <image class="" src="./images/partners/bar.png" style="margin-top:20px;margin-bottom:10px;"/>
+                </div>
+                <div class="colorstyle" style="color:white;">CLINCH A DEAL THE CASE</div>
+            </div>
+        
+
+            <div class="row">
+                <div class="features">
+                    <div class="col-md-4 col-sm-10 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="feature-wrap">
+                            <div class="yui_1">
+                                <image class="yui_img_1"
+                                    src="./images/partners/car2.png" />
+                                <div class="zzhao">
+                                    <div class="zzhao_font"><a href="case.html"style="color:#4ACCFF" >查看案例详情</a></div>
+                                </div>
+                            </div>
+                            <div style="color:black;background:white;">2013年三桥12方搅拌车</div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-10 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" id="row_2">
+                        <div class="feature-wrap">
+                            <div class="yui_2">
+                                <image class="yui_img_2"
+                                    src="./images/partners/car2.png" />
+                                <div class="zzhao">
+                                    <div class="zzhao_font"><a href="case.html"style="color:#4ACCFF" >查看案例详情</a></div>
+                                </div>
+                            </div>
+                            <div style="color:black;background:white;">2013年三桥12方搅拌车</div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-10 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" id="row_3">
+                        <div class="feature-wrap">
+                            <div class="yui_3">
+                                <image class="yui_img_3"
+                                    src="./images/partners/car2.png" />
+                                <div class="zzhao">
+                                    <div class="zzhao_font"><a href="case.html" style="color:#4ACCFF">查看案例详情</a></div>
+                                </div>
+                            </div>
+                            <div style="color:black;background:white;">2013年三桥12方搅拌车</div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                </div><!--/.services-->
+            </div><!--/.row-->
+            
+            <div class="anli_btn">
+                <div><a style="display:block;color: #fff; text-decoration: none;margin-bottom:10px;border:1px solid;text-align:center;align-items:center;" href="news_info.html">更多案例  ></a></div>
+            </div>
+    </section><!--/#feature-->
+
+
+
+    <!-- 新闻资讯 -->
+    <section class="news">
+            <div class="news_header">
+                <div class="firstmain-info_1" style="color:black;font-size:30px;margin-top:20px;">新闻资讯</div>
+                <div class="first-border">
+                    <image class="" src="./images/partners/bar.png" style="margin-top:20px;margin-bottom:10px;"/>
+                </div>
+                <div class="colorstyle" style="color:black;">NEWS  AND INFORMATION</div>
+            </div>
+
+
+
+
+
+            <div class="news_row">
+                <div style="padding-top: 22px;" class="news_bottom_1">
+                    <div>
+                        <image class="news_img"
+                            src="./images/partners/car2.png" />
+                    </div>
+                    <!-- fonts为展会报告的文字 -->
+                    <div class="fonts" style="width: 366px;text-align:center;align-items:center;padding-left:20px;padding-right:10px;background:white;">
+                        <div class="news_fonts_1" style="font-weight:900;margin-top:10px;margin-bottom:10px;">展会预告| 与您相约2021年长沙国际工程机械展览会</div>
+                        
+                        <span class="news_span"
+                            >2021长沙国际工程机械展览会将于5月19日在长沙国际会展中心拉开帷幕这将是今年全球唯一举办的30万平方米超大型工程机械行业展会。</span>
+                    </div>
+                </div>
+
+                <div class="news_bottom_2">
+
+                    <div class="news_lefts" style="margin-top:40px;margin-right:20px;">
+                        <div
+                            style="height: 125px;width:auto;margin-top: 20px;margin-bottom:30px;background-color: #fff;margin-left:10px;">
+                            <div style="display: flex;flex-direction:row;">
+                                <div style="margin-left: 20px; margin-top: 20px;">
+                                    <div style="color: gray;font-size: 24px;">15</div>
+                                    <div>
+                                        <img src="./images/partners/bar1.png" alt="" srcset="">
+                                    </div>
+                                    <div style="color: gray;margin-top: 10px;">2021-03</div>
+                                </div>
+                                <div style="padding: 10px; line-height: 30px;">
+                                    <div>混凝土泵车的使用应注意哪些事项</div>
+                                    <span
+                                        style="color: gray;margin-top: 10px;padding-top: 6px; font-size: 8px;">凝土泵车在进行各项操作时应有专业的操作人员对其进行系统的培训...</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            style="height: 125px; margin-top: 20px;background-color: #fff;margin-left:10px;">
+                            <div style="display: flex;flex-direction:row;">
+                                <div style="margin-left: 20px; margin-top: 20px;">
+                                    <div style="color: gray;font-size: 24px;">15</div>
+                                    <div>
+                                        <img src="./images/partners/bar1.png" alt="" srcset="">
+                                    </div>
+                                    <div style="color: gray;margin-top: 10px;">2021-03</div>
+                                </div>
+                                <div style="padding: 10px; line-height: 30px;">
+                                    <div>混凝土泵车的使用应注意哪些事项</div>
+                                    <span
+                                    style="color: gray;margin-top: 10px;padding-top: 6px; font-size: 8px;">凝土泵车在进行各项操作时应有专业的操作人员对其进行系统的培训...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news_rights" style="margin-top:40px;">
+                        <div
+                            style="height: 125px; margin-top: 20px;margin-bottom:30px;background-color: #fff;margin-left:10px;">
+                            <div class="boxshow" style="display:flex;flex-direction:row;">
+                                <div style="margin-left: 20px; margin-top: 20px;">
+                                    <div style="color: gray;font-size: 24px;">15</div>
+                                    <div>
+                                        <img src="./images/partners/bar1.png" alt="" srcset="">
+                                    </div>
+                                    <div style="color: gray;margin-top: 10px;">2021-03</div>
+                                </div>
+                                <div  style="padding: 10px; line-height: 30px;">
+                                    <div style="color: #56CFFF;">混凝土泵车的使用应注意哪些事项</div>
+                                    <span
+                                    style="color: gray;margin-top: 10px;padding-top: 6px; font-size: 8px;">凝土泵车进行各项操作时应有专业的操作人员对其进行系统的培训...</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            style="height: 125px; margin-top: 20px; background-color: #fff;margin-left:10px;">
+                            <div style="display: flex;">
+                                <div style="margin-left: 20px; margin-top: 20px;">
+                                    <div style="color: gray;font-size: 24px;">15</div>
+                                    <div>
+                                        <img src="./images/partners/bar1.png" alt="" srcset="">
+                                    </div>
+                                    <div style="color: gray;margin-top: 10px;">2021-03</div>
+                                </div>
+                                <div style="padding: 10px; line-height: 30px;">
+                                    <div>混凝土泵车的使用应注意哪些事项</div>
+                                    <span
+                                    style="color: gray;margin-top: 10px;padding-top: 6px; font-size: 8px;">凝土泵车在进行各项操作时应有专业的操作人员对其进行系统的培训...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.row-->
+    </section><!--/#recent-works-->
+
+
+    <!-- 关于我们 -->
+    <section class="about" class="service-item">
+        <div class="ab_xinwen">
+            <div class="ab" style="color:#ffffff;font-size:30px;margin-top:5px;margin-bottom:5px;">关于我们</div>
+            <div class="first-border">
+                <image class="" src="./images/partners/bar.png" />
+            </div>
+            <div class="colorstyle" style="margin-top:0px;margin-bottom:0px;color:white;">A B 0 U T US</div>
+        </div>
+        <div class="aboutinfo" style="margin-top:2px;">
+            <div class="oneaboutinfo">
+                <div style="padding-left:10px;padding-bottom:2px;" class="fonts_footer"> 砼 达 科 技 是 一 家 服 务 于 混 凝 土 及 原 材 料 生 产 、 物 流
+                    、 施 工 的 共 享 智 能 化 平 台 。</div>
+                <div class="fonts_footer_1">愿 景 ： 推 动 混 凝 土 产 业 数 字 文 明 进 程 ， 打 造 混 凝 土 高 效 流 通 生 态 圈 ; </div>
+                <div class="fonts_footer_2">使 命 ： 打 造 一 个 社 会 化 高 度 协 同 、 智 慧 的 工 程 机 械 物 联 网 运 营 平 台 </div>
+                <div class="fonts_footer_3"> 核 心 价 值 观 ： 服 务 创 造 价 值 ， 专 业 赢 得 信 任 ， 坚 持 成 就 梦 想 ， 奋 斗 改 变 生 活
+                </div>
+            </div>
+            <div>
+                <image style="height:200px;width: 460px;" src="./images/partners/city.png"
+                    mode="widthFix" class="bg_footer"/>
+            </div>
+        </div>
+    </section><!--/#services-->
+
+    <!-- 底部footer部分! -->
+    <footer class="footers">
+        <div class="footerinfo">
+            <div class="footer_left">
+                <div class="img_left">
+                    <image class="img_left_1" style="margin-top: 16px;" src="./images/banner1.png" />
+                </div>
+                <div style="display: flex; justify-content: space-between;margin-bottom:20px;margin-top:10px;" class="icon_binds">
+                    <div class="clik_icon_1" style="margin-top: 10px;">
+                        <div style="color:white;">📞 电 话: 1 5 0 8 4 9 3 5 5 5 5</div>
+                    </div>
+                    <div class="clik_icon_2" style="margin-top: 10px;">
+                        <div style="color:white;">📫 邮 箱: 1 2 3 7 1 5 8 3 0 @ qq.com</div>
+                    </div>
+                </div>
+                <div class="clik" style="margin-top: 10px;color:white;margin-bottom:15px;">
+                    地址:长 沙 市 雨 花 区 德 思 勤 广 场 1 栋 605室
+                </div>
+                <div class="clik" style="margin-top:10px;color:white;margin-bottom:6px;">
+                    友情链接 : 长沙鼎宸机械设备租赁有限公司 | 湖南鼎宸物流有限公司 | 湖南砼达物流有限公司 | 湖南鑫铅锂新能源科技有限公司 | 贵州砼达科技有限公司
+                </div>
+            </div>
+            <div class="right1" id="right1">
+                <div class="click_1">
+                    <div class="font_clik_1">关于我们</div>
+                    <div class="font_clik">砼达简介</div>
+                    <div class="font_clik">商混物流</div>
+                    <div class="font_clik">机械租凭</div>
+                    <div class="font_clik">矿山骨科</div>
+                </div>
+                <div class="clik">
+                    <div  style="color: #fff;">关注我们<span
+                            style="color: gray;font-size: 12px;">(扫一扫)</span></div>
+                    <img class="ewm" src="./images/scanner.png"></img>
+                </div>
+            </div>
+        </div>
+        <div class="last">
+            <div class="last-info font"></div>
+            <div class="font_clik_last" style="color:white;">Copyight 2012-2015 砼达科技 版权所有 honghu.com 湘ICP备15019654号.</div>
+        </div>
+    </footer><!--/#middle-->
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- 这是修改之后的轮播图事件 -->
+    <script type="text/javascript">
+    
+    //轮播图自动播放
+    $('#myCarousel').carousel({
+        //自动3s播放
+        interval: 3000,
+    });
+
+    //设置垂直居中  这是设置左右按钮的垂直居中问题，用jq解决，设置行高等于图片高度，就垂直居中了
+    $('.carousel-control').css('line-height',$('.carousel-inner img').height() + 'px');
+    $(window).resize(function(){
+        var $height = $('.carousel-inner img').eq(0).height() || $('.carousel-inner img').eq(1).height() || $('.carousel-inner img').eq(2).height();
+        $('.carousel-control').css('line-height',$height + 'px');
+    })
+
+    // 点的位置
+    var im1 = document.getElementById("img1");
+    var im2 = document.getElementById("img2");
+    var im3 = document.getElementById("img3");
+    var im4 = document.getElementById("img4");
+
+    // 内容信息
+    var mr = document.getElementById("moren");
+    var mr2 = document.getElementById("moren2");
+    var mr3 = document.getElementById("moren3");
+    var mr4 = document.getElementById("moren4");
+    var mr5 = document.getElementById("moren5");
+
+    
+    im1.onmousemove = function(){
+        mr.style.display = "block",
+        mr5.style.display = "none"
+    }
+    
+    im3.onmousemove = function(){
+        mr3.style.display = "block",
+        mr5.style.display = "none"
+
+    }
+    im2.onmousemove = function(){
+        mr2.style.display= "block",
+        mr5.style.display = "none"
+
+    }
+    im4.onmousemove = function(){
+        mr4.style.display = "block",
+        mr5.style.display = "none"
+
+    },
+    im3.onmouseout = function(){
+        mr3.style.display = "none",
+        mr5.style.display = "block"
+
+    },
+    im1.onmouseout = function(){
+        mr.style.display = "none",
+        mr5.style.display = "block"
+
+    },
+    im2.onmouseout = function (){
+        mr2.style.display = "none",
+        mr5.style.display = "block"
+
+    },
+    im4.onmouseout = function(){
+        mr4.style.display = "none",
+        mr5.style.display = "block"
+
+    }
+    
+
+
+
+</script>
+
+
+
+<!-- 这里本来考虑的是利用不同屏幕的宽度来进行切换实现页面的跳转！ -->
+<!-- <script>
+    window.onresize = function() {
+        /*屏幕的大小做判断切换对应的页面*/
+        var clientWidth = document.documentElement.clientWidth;
+
+        if (clientWidth > 1300)
+        {
+            window.location.href = './index_pc.html'
+        }
+        
+
+        
+
+
+    }
+</script> -->
+
+</body>
+</html>

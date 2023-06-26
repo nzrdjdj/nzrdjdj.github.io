@@ -1,0 +1,175 @@
+#iPicture{
+  margin: 0 auto;
+	font-size: 14px;
+	color: #ffffff;
+}
+.ip_slide{
+  width: 965px;
+  /* height: 418px; */
+  position: relative;
+  margin: 0 auto;
+}
+.ip_tooltip {
+    position: absolute;
+    right: -260px;
+}
+
+
+/* 球 */
+
+/* white round bg */
+
+
+.ip_img32 .roundBgWInner{
+	height: 16px;
+    width: 16px;
+    position:absolute !important;
+    left: -2px;
+    top: -2px;
+}
+
+.roundBgW{ 
+	border-radius: 30px;
+	position: absolute;
+	animation: pulseW 1.5s 1s infinite alternate; 
+	-moz-animation: pulseW 1.5s 1s infinite alternate; /* Firefox */
+	-webkit-animation: pulseW 1.5s 1s infinite alternate;  /* Safari and Chrome */
+	-o-animation: pulseW 1.5s 1s infinite alternate; /* Opera */
+}
+.roundBgWIn{
+	border-radius: 30px;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	animation: pulseWIn 1.5s 0.5s infinite alternate;
+	-moz-animation: pulseWIn 1.5s 0.5s infinite alternate; /* Firefox */
+	-webkit-animation: pulseWIn 1.5s 0.5s infinite alternate; /* Safari and Chrome */
+	-o-animation: pulseWIn 1.5s 0.5s infinite alternate; /* Opera */
+}
+.roundBgWInner{
+	border-radius: 30px;
+	position: absolute;
+	top: 7px;
+	left: 7px;
+	animation: pulseWInner 1.5s infinite alternate;
+	-moz-animation: pulseWInner 1.5s infinite alternate; /* Firefox */
+	-webkit-animation: pulseWInner 1.5s infinite alternate; /* Safari and Chrome */
+	-o-animation: pulseWInner 1.5s infinite alternate; /* Opera */
+}
+
+
+
+
+
+
+
+/*在这里我们为了适应手机端，我们可以重写圆点的CSS样式*/
+@media screen and (max-width:1100px){
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes pulseW
+{
+from {background: rgba(247, 28, 28, 0);}
+to {background: rgba(248, 24, 24, 0.2);}
+}
+
+@-moz-keyframes pulseW /* Firefox */
+{
+from {background: rgba(194, 66, 66, 0);}
+to {background: rgba(216, 31, 31, 0.2);}
+}
+
+@-webkit-keyframes pulseW /* Safari and Chrome */
+{
+from {background: rgba(255,255,255, 0);}
+to {background: rgba(240, 8, 8, 0.2);}
+}
+
+@-o-keyframes pulseW /* Opera */
+{
+from {background: rgba(248, 39, 39, 0);}
+to {background: rgba(240, 11, 11, 0.2);}
+}
+@keyframes pulseWIn
+{
+from {background: rgba(255,255,255, 0);}
+to {background: rgba(245, 22, 22, 0.3);}
+}
+
+@-moz-keyframes pulseWIn /* Firefox */
+{
+from {background: rgba(255,255,255, 0);}
+to {background: rgba(247, 18, 18, 0.3);}
+}
+
+@-webkit-keyframes pulseWIn /* Safari and Chrome */
+{
+from {background: rgba(194, 34, 34, 0);}
+to {background: rgba(255, 26, 26, 0.3);}
+}
+
+@-o-keyframes pulseWIn /* Opera */
+{
+from {background: rgba(236, 61, 61, 0);}
+to {background: rgba(247, 32, 32, 0.3);}
+}
+
+@keyframes pulseWInner
+{
+from {background: rgba(255,255,255, 0);}
+to {background: rgba(243, 18, 18, 0.6);}
+}
+
+@-moz-keyframes pulseWInner /* Firefox */
+{
+from {background: rgba(255,255,255, 0);}
+to {background: rgba(253, 17, 17, 0.6);}
+}
+
+@-webkit-keyframes pulseWInner /* Safari and Chrome */
+{
+from {background: rgba(255,255,255, 0);}
+to {background: rgba(252, 40, 40, 0.6);}
+}
+
+@-o-keyframes pulseWInner /* Opera */
+{
+from {background: rgba(255,255,255, 0);}
+to {background: rgba(253, 31, 31, 0.6);}
+}
+.xs{
+  position: absolute;
+  top: -200px;
+  right: 80px;
+  width: 400px;
+  height: 400px !important;
+  line-height: 38px;
+  display:none
+}
+
+/* .descrContainer>.xs:nth-child(1){
+  display: block;
+} */
+
+
