@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.head-title{
+    line-height: 70px;
+    width: 100%;
+    background-color: #010308;
+    height: 70px;
+}
+.head-nav{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+.head-nav .left{
+    flex: 1;
+    margin-top: 10px;
+}
+.head-nav div{
+    height: 55px;
+}
+.head-title .right{
+    display: flex;
+    color: #fff;
+    width: 880px;
+    cursor: pointer;
+    justify-content: space-around;
+}
+.right>div:hover{
+    border-bottom: 4px solid #49C5F6;
+    text-align: center;
+}
+.centinfo{
+    width: 100%;
+    height: 500px;
+    background: url(/images/lg_02.png) no-repeat 50%;
+}
+/* .info{
+    text-align: center;
+    padding-top: 200px;
+    color: #fff;
+    font-size: 22px;
+} */
+.mainCenter{
+    /* background: url(../images/service/logo.png); */
+    margin-top: 10px;
+    text-align: center;
+}
+.pgimg{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.yui{
+    height: 245px;
+}
+.icon{
+    width: 435px;
+    height: 25px;
+    background: #fff;
+}
+.zzhao{
+    font-size: 15px;
+    width: 435px;
+    height: 245px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    margin-top: -249px;
+    display: none;
+}
+.yui:hover .zzhao{
+    
+    display: block;
+}
+.zzhao div{
+    color:#49C5F6;
+    padding: 10px;
+    border: 1px solid #49C5F6;
+    width: 100px;
+    margin: 100px auto;
+    cursor: pointer;
+}
+
+.center{
+    background-color: #f6fefc;
+    padding-top: 20px;
+    height: 610px;
+}
+.footer{
+    width: 100%;
+    height: 225px;
+    background-color: #1B222E;
+    margin-top: 50px;
+}
+.footerinfo{
+    display: flex;
+    width: 80%;
+    margin: 10px auto;
+}
+.left{
+    color: gray;
+    font-size: 12px;
+}
+.right1{
+    margin-top: 10px;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.font{
+    margin-top: 10px;
+    color: gray;
+    font-size: 12px;
+}
+.ewm{
+    margin-top: 10px;
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+}
+.last{
+    width: 80%;
+    margin: 0 auto;
+}
+.last-info{
+    border-top: 1px solid gray;
+}
+.clik{
+    cursor: pointer;
+}
+.right a{
+    color: #fff;
+    text-decoration: none;
+  }

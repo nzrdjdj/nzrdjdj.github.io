@@ -1,0 +1,47 @@
+#lunbo img {
+    /* width: 500px; */
+    position: absolute;
+    display: none;
+    transition: all 1s;
+}
+
+.lu {
+    display: block;
+}
+
+.zuyo div {
+    width: 50px;
+    height: 50px;
+    background: black;
+    color: red;
+    text-align: center;
+    line-height: 50px;
+}
+
+.zuyo {
+    width: 500px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button div {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: black;
+
+}
+
+.button {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    top: 450px;
+}
+
+.hei {
+    background: red !important;
+}

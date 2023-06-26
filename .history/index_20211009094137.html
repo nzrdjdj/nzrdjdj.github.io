@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<script>
+    var nei = document.getElementById('lunbo');
+    var move = document.getElementById('head');
+    var index = 0;
+
+    function str() {
+        index++
+        if (index >= 3) {
+            index = 0
+        }
+    }
+
+    function main() {
+        for (var i = 0; i < nei.length; i++) {
+            nei[i].style.display = "none"
+        }
+        nei[index].style.display = "block"
+    }
+
+    item = setInterval(str, 2000)
+
+    move.onmouseover = function () {
+        clearInterval(item)
+    }
+    move.onmouseout = function () {
+        item = setInterval(str, 2000)
+    }
+</script>
+zh
+<body>
+    <div class="all">
+        <div class="head">
+            <div class="haed-logo" id="lunbo">
+                <img src="./images/slider/bg1.png" />
+                <img src="./images/slider/bg3.jpg" />
+                <img src="./images/slider/bg2.jpg" />
+            </div>
+            <div class="head-title">
+                <div class="head-nav">
+                    <div class="left">
+                        <image class="" src="./images/logo.png" mode="widthFix" />
+                    </div>
+                    <div class="right">
+                        <div class="hover">首页</div>
+                        <div>公司概况</div>
+                        <div>运输物流</div>
+                        <div>机械租凭</div>
+                        <div>矿山骨料</div>
+                        <div>联系我们</div>
+                        <div>砼达云平台</div>
+                        <div>
+                            <image class="" src="./images/dl.png" "/>
+                            登录
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" main">
+                                <!-- 业务 -->
+                                <div class="firstmain">
+                                    <div class="firstmain-info">业务布局</div>
+                                    <div class="first-border">
+                                        <image class="" src="./images/partners/bar.png" />
+                                    </div>
+                                    <div class="colorstyle">B U S I N E S S L A Y O U T</div>
+                                    <div class="main-img">
+                                        <image style="width: 80%;margin-top: 10px;" src="./images/partners/map.png"
+                                            mode="widthFix" />
+                                    </div>
+                                </div>
+                                <!-- 运营 -->
+                                <div class="mainCenter">
+                                    <div class="firstmain-info">运营案列</div>
+                                    <div class="first-border">
+                                        <image class="" src="./images/partners/bar.png" />
+                                    </div>
+                                    <div class="colorstyle">C L N C H A D E A L T H E C A S E</div>
+                                    <div class="pgimg">
+                                        <div class="img">
+                                            <div class="yui">
+                                                <image style="width: 435px;height: 245px;"
+                                                    src="./images/partners/car2.png" />
+                                                <div class="zzhao">
+                                                    <div>查看案例详情</div>
+                                                </div>
+                                            </div>
+                                            <div class="icon">123456</div>
+                                        </div>
+                                        <div class="img">
+                                            <div class="yui">
+                                                <image style="width: 435px;height: 245px;"
+                                                    src="./images/partners/car2.png" />
+                                                <div class="zzhao">
+                                                    <div>查看案例详情</div>
+                                                </div>
+                                            </div>
+                                            <div class="icon">123456</div>
+                                        </div>
+                                        <div class="img">
+                                            <div class="yui">
+                                                <image style="width: 435px;height: 245px;"
+                                                    src="./images/partners/car2.png" />
+                                                <div class="zzhao">
+                                                    <div>查看案例详情</div>
+                                                </div>
+                                            </div>
+                                            <div class="icon">123456</div>
+                                        </div>
+                                    </div>
+                                    <div class="anli">
+                                        <div>更多案例></div>
+                                    </div>
+                                </div>
+                                <!-- 新闻资讯 -->
+                                <div class="ctenrnew">
+                                    <div class="xinwen">
+                                        <div class="firstmain-info">新闻资讯</div>
+                                        <div class="first-border">
+                                            <image class="" src="./images/partners/bar.png" />
+                                        </div>
+                                        <div class="colorstyle">N E W S A N D infomation</div>
+                                    </div>
+                                    <div class="news">
+                                        <div style="    padding-top: 22px;">
+                                            <div>
+                                                <image style="width: 435px;height: 245px;"
+                                                    src="./images/partners/car2.png" />
+                                            </div>
+                                            <div style="width: 435px;">
+                                                展会预告| 与您相约2021年长沙国际工程机械展览会<br>
+                                                <span
+                                                    style="color: gray;">2021长沙国际工程机械展览会将于5月19日在长沙国际会展中心拉开帷幕。这将是今年全球唯一举办的30万平方米超大型工程机械行业展会。</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div
+                                                style="height: 125px; margin-top: 20px; background-color: #fff;margin-left:10px;">
+                                                <div style="display: flex;">
+                                                    <div style="margin-left: 20px; margin-top: 20px;">
+                                                        <div style="color: gray;font-size: 24px;">15</div>
+                                                        <div style="color: gray;margin-top: 30px;">2021-03</div>
+                                                    </div>
+                                                    <div style="padding: 15px; line-height: 30px;">
+                                                        <div>混凝土泵车的使用应注意哪些事项</div>
+                                                        <span
+                                                            style="color: gray;margin-top: 30px;padding-top: 20px; margin-left: 10px;">凝土泵车在进行各项操作时应有专业<br>的操作人员对其进行系统的培训...</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                style="height: 125px; margin-top: 20px; background-color: #fff;margin-left:10px;">
+                                                <div style="display: flex;">
+                                                    <div style="margin-left: 20px; margin-top: 20px;">
+                                                        <div style="color: gray;font-size: 24px;">15</div>
+                                                        <div style="color: gray;margin-top: 30px;">2021-03</div>
+                                                    </div>
+                                                    <div style="padding: 15px; line-height: 30px;">
+                                                        <div>混凝土泵车的使用应注意哪些事项</div>
+                                                        <span
+                                                            style="color: gray;margin-top: 30px;padding-top: 20px; margin-left: 10px;">凝土泵车在进行各项操作时应有专业<br>的操作人员对其进行系统的培训...</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div
+                                                style="height: 125px; margin-top: 20px; background-color: #fff;margin-left:10px;">
+                                                <div style="display: flex;">
+                                                    <div style="margin-left: 20px; margin-top: 20px;">
+                                                        <div style="color: gray;font-size: 24px;">15</div>
+                                                        <div style="color: gray;margin-top: 30px;">2021-03</div>
+                                                    </div>
+                                                    <div style="padding: 15px; line-height: 30px;">
+                                                        <div style="color: #56CFFF;">混凝土泵车的使用应注意哪些事项</div>
+                                                        <span
+                                                            style="color: gray;margin-top: 30px;padding-top: 20px; margin-left: 10px;">凝土泵车在进行各项操作时应有专业<br>的操作人员对其进行系统的培训...</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                style="height: 125px; margin-top: 20px; background-color: #fff;margin-left:10px;">
+                                                <div style="display: flex;">
+                                                    <div style="margin-left: 20px; margin-top: 20px;">
+                                                        <div style="color: gray;font-size: 24px;">15</div>
+                                                        <div style="color: gray;margin-top: 30px;">2021-03</div>
+                                                    </div>
+                                                    <div style="padding: 15px; line-height: 30px;">
+                                                        <div>混凝土泵车的使用应注意哪些事项</div>
+                                                        <span
+                                                            style="color: gray;margin-top: 30px;padding-top: 20px; margin-left: 10px;">凝土泵车在进行各项操作时应有专业<br>的操作人员对其进行系统的培训...</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 关于我们 -->
+                                <div class="about">
+                                    <div class="xinwen">
+                                        <div class="ab">关于我们</div>
+                                        <div class="first-border">
+                                            <image class="" src="./images/partners/bar.png" />
+                                        </div>
+                                        <div class="colorstyle">A B 0 U T US</div>
+                                    </div>
+                                    <div class="aboutinfo">
+                                        <div class="oneaboutinfo">
+                                            <div style="padding-left:10px;"> 砼 达 科 技 是 一 家 服 务 于 混 凝 土 及 原 材 料 生 产 、 物 流
+                                                、 施 工 的 共 享 智 能 化 平 台 。</div>
+                                            <div>愿 景 ： 推 动 混 凝 土 产 业 数 字 文 明 进 程 ， 打 造 混 凝 土 高 效 流 通 生 态 圈 ; </div>
+                                            <div>使 命 ： 打 造 一 个 社 会 化 高 度 协 同 、 智 慧 的 工 程 机 械 物 联 网 运 营 平 台 </div>
+                                            <div> 核 心 价 值 观 ： 服 务 创 造 价 值 ， 专 业 赢 得 信 任 ， 坚 持 成 就 梦 想 ， 奋 斗 改 变 生 活
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <image style="height:200px;width: 460px;" src="./images/partners/city.png"
+                                                mode="widthFix" />
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="footerinfo">
+                            <div class="left">
+                                <div>
+                                    <image style="margin-top: 30px;" src="./images/banner1.png" />
+                                </div>
+                                <div style="display: flex; justify-content: space-between;width: 700px;">
+                                    <div style="margin-top: 10px; margin-left: -10px;">
+                                        <image src="" />
+                                        📞 电 话: 1 5 0 8 4 9 3 5 5 5 5
+                                    </div>
+                                    <div style="margin-top: 10px;">📫 邮 箱: 1 2 3 7 1 5 8 3 0 @ qq.com</div>
+                                </div>
+                                <div style="margin-top: 10px;">
+                                    地址:长 沙 市 雨 花 区 德 思 勤 广 场 1 栋 605室
+                                </div>
+                                <div style="margin-top: 10px;">
+                                    友情链接 : 长沙鼎宸机械设备租赁有限公司 | 湖南鼎宸物流有限公司 | 湖南砼达物流有限公司 | 湖南鑫铅锂新能源科技有限公司 | 贵州砼达科技有限公司
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div style="text-align: center;">
+                                    <div style="color: #fff;">关于我们</div>
+                                    <div class="font">砼达简介</div>
+                                    <div class="font">商混物流</div>
+                                    <div class="font">机械租凭</div>
+                                    <div class="font">矿山骨科</div>
+                                </div>
+                                <div>
+                                    <div style="color: #fff;">关注我们<span
+                                            style="color: gray;font-size: 12px;">(扫一扫)</span></div>
+                                    <div class="ewm"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="last">
+                            <div class="last-info font"></div>
+                            <div class="font">Copyight 2012-2015 砼达科技 版权所有 honghu.com 湘ICP备15019654号.</div>
+                        </div>
+                    </div>
+</body>
+
+</html>

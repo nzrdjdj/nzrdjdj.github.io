@@ -1,0 +1,29 @@
+.lunbo1 img{
+    width: 1519px;
+    height: 730px;
+    position: absolute;
+    display: none;
+}
+.lunbox{
+    height: 730px;
+}
+.button div {
+    width: 40px;
+    height: 2px;
+    /* border-radius: 50%; */
+    background: #75b9ea;
+
+}
+
+.button {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+    top: 685px;
+    left: 630px;
+}
+
+.hei {
+    background: rgb(43, 170, 243) !important;
+}
